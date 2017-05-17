@@ -5,3 +5,5 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Level.create([{name: 'Application'}, {name: 'Logic'}, {name: 'Indices'}, {name: 'Metrics'}, {name: 'Signal'}])
+
