@@ -219,3 +219,36 @@ Processing by UsersController#index as HTML
   [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users"[0m
   Rendered users/index.html.erb within layouts/application (2.0ms)
 Completed 200 OK in 116ms (Views: 114.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-05-17 13:09:54 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/mikkotiainen/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/templates/rails/welcome/index.html.erb (1.9ms)
+Completed 200 OK in 21ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2017-05-17 13:11:31 +0300
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 459ms (Views: 456.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/scaffolds.self-03fb4512397d33f81cc9550e4e717f2f7af2b0f65722699c99bb1dac79706b9e.css?body=1" for ::1 at 2017-05-17 13:11:31 +0300
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-17 13:11:31 +0300
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for ::1 at 2017-05-17 13:11:31 +0300
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-17 13:11:31 +0300
+
+
+Started GET "/users" for ::1 at 2017-05-17 13:18:23 +0300
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 23ms (Views: 20.6ms | ActiveRecord: 0.2ms)
