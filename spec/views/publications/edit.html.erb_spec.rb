@@ -7,7 +7,6 @@ RSpec.describe "publications/edit", type: :view do
       :abstract => "MyString",
       :year => 1,
       :link_id => 1,
-      :author_id => 1,
       :journal => "MyString",
     ))
   end
@@ -24,8 +23,6 @@ RSpec.describe "publications/edit", type: :view do
       assert_select "input#publication_year[name=?]", "publication[year]"
 
       assert_select "input#publication_link_id[name=?]", "publication[link_id]"
-
-      assert_select "input#publication_author_id[name=?]", "publication[author_id]"
 
       assert_select "input#publication_journal[name=?]", "publication[journal]"
 
