@@ -9,7 +9,6 @@ RSpec.describe "publications/show", type: :view do
       :link_id => 3,
       :author_id => 4,
       :journal => "Journal",
-      :category_id => 5
     ))
   end
 
@@ -21,6 +20,5 @@ RSpec.describe "publications/show", type: :view do
     expect(rendered).to match(/3/)
     expect(rendered).to match(/4/)
     expect(rendered).to match(/Journal/)
-    expect(rendered).to match(/5/)
   end
 end

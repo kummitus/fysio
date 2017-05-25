@@ -5,7 +5,7 @@ RSpec.describe "links/new", type: :view do
     assign(:link, Link.new(
       :url => "MyString",
       :publication_id => 1,
-      :type => ""
+      :link_type => "MyString"
     ))
   end
 
@@ -18,7 +18,7 @@ RSpec.describe "links/new", type: :view do
 
       assert_select "input#link_publication_id[name=?]", "link[publication_id]"
 
-      assert_select "input#link_type[name=?]", "link[type]"
+      assert_select "input#link_link_type[name=?]", "link[link_type]"
     end
   end
 end

@@ -5,7 +5,7 @@ RSpec.describe "links/show", type: :view do
     @link = assign(:link, Link.create!(
       :url => "Url",
       :publication_id => 2,
-      :type => "Type"
+      :link_type => "Type"
     ))
   end
 

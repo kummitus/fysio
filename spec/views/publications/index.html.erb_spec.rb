@@ -10,7 +10,6 @@ RSpec.describe "publications/index", type: :view do
         :link_id => 3,
         :author_id => 4,
         :journal => "Journal",
-        :category_id => 5
       ),
       Publication.create!(
         :name => "Name",
@@ -19,7 +18,6 @@ RSpec.describe "publications/index", type: :view do
         :link_id => 3,
         :author_id => 4,
         :journal => "Journal",
-        :category_id => 5
       )
     ])
   end
@@ -32,6 +30,5 @@ RSpec.describe "publications/index", type: :view do
     assert_select "tr>td", :text => 3.to_s, :count => 2
     assert_select "tr>td", :text => 4.to_s, :count => 2
     assert_select "tr>td", :text => "Journal".to_s, :count => 2
-    assert_select "tr>td", :text => 5.to_s, :count => 2
   end
 end

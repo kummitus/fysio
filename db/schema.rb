@@ -41,7 +41,7 @@ ActiveRecord::Schema.define(version: 20170525145441) do
   create_table "links", force: :cascade do |t|
     t.string   "url"
     t.integer  "publication_id"
-    t.string   "type"
+    t.string   "link_type"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
   end

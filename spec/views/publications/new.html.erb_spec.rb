@@ -9,7 +9,6 @@ RSpec.describe "publications/new", type: :view do
       :link_id => 1,
       :author_id => 1,
       :journal => "MyString",
-      :category_id => 1
     ))
   end
 
@@ -30,7 +29,6 @@ RSpec.describe "publications/new", type: :view do
 
       assert_select "input#publication_journal[name=?]", "publication[journal]"
 
-      assert_select "input#publication_category_id[name=?]", "publication[category_id]"
     end
   end
 end

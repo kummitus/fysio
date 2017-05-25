@@ -6,12 +6,12 @@ RSpec.describe "links/index", type: :view do
       Link.create!(
         :url => "Url",
         :publication_id => 2,
-        :type => "Type"
+        :link_type => "Type"
       ),
       Link.create!(
         :url => "Url",
         :publication_id => 2,
-        :type => "Type"
+        :link_type => "Type"
       )
     ])
   end
