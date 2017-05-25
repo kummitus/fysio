@@ -4,7 +4,6 @@ class CreatePublications < ActiveRecord::Migration
       t.string :name
       t.string :abstract
       t.integer :year
-      t.integer :link_id
       t.string :journal
 
       t.timestamps null: false

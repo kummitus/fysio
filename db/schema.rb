@@ -15,9 +15,8 @@ ActiveRecord::Schema.define(version: 20170525193931) do
 
   create_table "authors", force: :cascade do |t|
     t.string   "name"
-    t.integer  "publication_id"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "authors_publications", id: false, force: :cascade do |t|
@@ -55,8 +54,6 @@ ActiveRecord::Schema.define(version: 20170525193931) do
     t.string   "name"
     t.string   "abstract"
     t.integer  "year"
-    t.integer  "link_id"
-    t.integer  "author_id"
     t.string   "journal"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
