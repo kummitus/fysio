@@ -53,6 +53,8 @@ group :development, :test do
   gem 'cucumber-rails', :require => false
   # database_cleaner is not required, but highly recommended
   gem 'database_cleaner'
+  # for testing associations between database tables
+  gem 'shoulda'
 end
 
 group :development do

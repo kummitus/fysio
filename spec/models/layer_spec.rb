@@ -1,5 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe Layer, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  describe "Assosiations" do
+    it { (should have_many(:categories)) }
+  end
+  describe "Validations" do
+    it { (should validate_presence_of(:name)) }
+  end
 end
