@@ -51,3 +51,4 @@ build-iPhoneSimulator/
 .idea/
 /sketch
 /log
+/log/*
