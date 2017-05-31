@@ -1,18 +1,40 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Button,
+        ListGroup,
+        ListGroupItem} from 'reactstrap';
 
 class App extends Component {
-  render() {
+    constructor() {
+        super();
+        this.state = {
+            visible: "LayersPage",
+            layers: []
+        }
+    }
+
+    componentWillMount() {
+        fetch('http://localhost:3001/layers.json')
+            .then( response => response.json() )
+            .then( results => {
+                console.log(results)
+                this.setState({
+                    layers: results
+                })
+            })
+    }
+
+    render() {
+        const Layer = (props) =>
+            <ListGroupItem>
+                {props.layer.name}
+            </ListGroupItem>
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div>
+        <ListGroup>
+            { this.state.layers.map(l => <Layer key={l.id} layer={l}/>) }
+            <Button color="danger">Danger</Button>
+        </ListGroup>
       </div>
     );
   }

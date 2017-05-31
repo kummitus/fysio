@@ -319,6 +319,59 @@ Processing by UsersController#index as HTML
   [1m[36mUser Load (1.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
   Rendered users/index.html.erb within layouts/application (9.1ms)
 Completed 200 OK in 112ms (Views: 103.6ms | ActiveRecord: 1.2ms)
+<<<<<<< HEAD
+
+
+Started GET "/users" for ::1 at 2017-05-24 14:10:40 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 315ms (Views: 302.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/scaffolds.self-03fb4512397d33f81cc9550e4e717f2f7af2b0f65722699c99bb1dac79706b9e.css?body=1" for ::1 at 2017-05-24 14:10:40 +0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-05-24 14:10:40 +0300
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-24 14:10:40 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2017-05-24 14:10:40 +0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-05-24 14:10:40 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2017-05-24 14:10:40 +0300
+
+
+Started GET "/users.json" for ::1 at 2017-05-24 14:10:44 +0300
+Processing by UsersController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.json.jbuilder (3.9ms)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/scaffolds.self-03fb4512397d33f81cc9550e4e717f2f7af2b0f65722699c99bb1dac79706b9e.css?body=1" for ::1 at 2017-05-24 14:10:50 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2017-05-24 14:10:50 +0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-05-24 14:10:50 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2017-05-24 14:10:50 +0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-05-24 14:10:50 +0300
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-24 14:10:50 +0300
+=======
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 Migrating to CreateLayers (20170525121507)
   [1m[35m (0.1ms)[0m  begin transaction
@@ -732,3 +785,1651 @@ Migrating to CreateJoinTablePublicationCategory (20170525145441)
   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170525145441"]]
   [1m[35m (0.7ms)[0m  commit transaction
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+>>>>>>> f0ac25b0402f0dc6a48679fe945a19dc7152b5a8
+  [1m[36m (1.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateLayers (20170525121507)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "layers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170525121507"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Migrating to CreateCategories (20170525121621)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "layer_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170525121621"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Migrating to CreateUsers (20170525125708)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170525125708"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Migrating to CreatePublications (20170525134658)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "publications" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "abstract" varchar, "year" integer, "journal" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170525134658"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Migrating to CreateAuthors (20170525134810)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170525134810"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Migrating to CreateLinks (20170525134948)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "links" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "url" varchar, "publication_id" integer, "link_type" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170525134948"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Migrating to CreateJoinTablePublicationCategory (20170525145441)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "categories_publications" ("publication_id" integer NOT NULL, "category_id" integer NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170525145441"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Migrating to CreateJoinTablePublicationAuthor (20170525193931)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "authors_publications" ("publication_id" integer NOT NULL, "author_id" integer NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170525193931"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Signal"], ["created_at", "2017-05-29 13:45:23.690775"], ["updated_at", "2017-05-29 13:45:23.690775"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Metrics"], ["created_at", "2017-05-29 13:45:23.695212"], ["updated_at", "2017-05-29 13:45:23.695212"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Indicies"], ["created_at", "2017-05-29 13:45:23.697415"], ["updated_at", "2017-05-29 13:45:23.697415"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Logic"], ["created_at", "2017-05-29 13:45:23.699245"], ["updated_at", "2017-05-29 13:45:23.699245"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Application"], ["created_at", "2017-05-29 13:45:23.701081"], ["updated_at", "2017-05-29 13:45:23.701081"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+
+
+Started GET "/" for ::1 at 2017-05-29 16:45:53 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/mikkotiainen/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/templates/rails/welcome/index.html.erb (2.3ms)
+Completed 200 OK in 24ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/layers" for ::1 at 2017-05-29 16:45:57 +0300
+Processing by LayersController#index as HTML
+  [1m[35mLayer Load (0.5ms)[0m  SELECT "layers".* FROM "layers"
+  Rendered layers/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 506ms (Views: 498.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/authors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-29 16:45:58 +0300
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-29 16:45:58 +0300
+
+
+Started GET "/assets/links.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-29 16:45:58 +0300
+
+
+Started GET "/assets/layers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-29 16:45:58 +0300
+
+
+Started GET "/assets/scaffolds.self-03fb4512397d33f81cc9550e4e717f2f7af2b0f65722699c99bb1dac79706b9e.css?body=1" for ::1 at 2017-05-29 16:45:58 +0300
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-29 16:45:58 +0300
+
+
+Started GET "/assets/publications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-05-29 16:45:58 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2017-05-29 16:45:58 +0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-05-29 16:45:58 +0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-05-29 16:45:58 +0300
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for ::1 at 2017-05-29 16:45:58 +0300
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-29 16:45:58 +0300
+
+
+Started GET "/assets/authors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-29 16:45:58 +0300
+
+
+Started GET "/assets/layers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-29 16:45:58 +0300
+
+
+Started GET "/assets/links.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-29 16:45:58 +0300
+
+
+Started GET "/assets/publications.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-29 16:45:58 +0300
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-29 16:45:58 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2017-05-29 16:45:58 +0300
+
+
+Started GET "/layers.json" for ::1 at 2017-05-29 16:48:39 +0300
+Processing by LayersController#index as JSON
+  [1m[36mLayer Load (0.1ms)[0m  [1mSELECT "layers".* FROM "layers"[0m
+  Rendered layers/_layer.json.jbuilder (1.0ms)
+  Rendered layers/_layer.json.jbuilder (0.3ms)
+  Rendered layers/_layer.json.jbuilder (0.3ms)
+  Rendered layers/_layer.json.jbuilder (0.2ms)
+  Rendered layers/_layer.json.jbuilder (0.2ms)
+  Rendered layers/index.json.jbuilder (14.0ms)
+Completed 200 OK in 20ms (Views: 18.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/layers.json" for ::1 at 2017-05-29 16:51:38 +0300
+Processing by LayersController#index as JSON
+  [1m[35mLayer Load (0.6ms)[0m  SELECT "layers".* FROM "layers"
+  Rendered layers/_layer.json.jbuilder (0.8ms)
+  Rendered layers/_layer.json.jbuilder (0.5ms)
+  Rendered layers/_layer.json.jbuilder (0.5ms)
+  Rendered layers/_layer.json.jbuilder (0.6ms)
+  Rendered layers/_layer.json.jbuilder (0.4ms)
+  Rendered layers/index.json.jbuilder (12.0ms)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/layers.json" for ::1 at 2017-05-29 16:53:12 +0300
+Processing by LayersController#index as JSON
+  [1m[36mLayer Load (0.7ms)[0m  [1mSELECT "layers".* FROM "layers"[0m
+  Rendered layers/_layer.json.jbuilder (0.5ms)
+  Rendered layers/_layer.json.jbuilder (0.9ms)
+  Rendered layers/_layer.json.jbuilder (0.5ms)
+  Rendered layers/_layer.json.jbuilder (1.2ms)
+  Rendered layers/_layer.json.jbuilder (0.4ms)
+  Rendered layers/index.json.jbuilder (14.1ms)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/layers.json" for ::1 at 2017-05-29 16:54:25 +0300
+Processing by LayersController#index as JSON
+  [1m[35mLayer Load (0.2ms)[0m  SELECT "layers".* FROM "layers"
+  Rendered layers/_layer.json.jbuilder (0.5ms)
+  Rendered layers/_layer.json.jbuilder (0.4ms)
+  Rendered layers/_layer.json.jbuilder (0.5ms)
+  Rendered layers/_layer.json.jbuilder (0.5ms)
+  Rendered layers/_layer.json.jbuilder (0.5ms)
+  Rendered layers/index.json.jbuilder (9.3ms)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/layers.json" for ::1 at 2017-05-29 16:57:10 +0300
+Processing by LayersController#index as JSON
+  [1m[36mLayer Load (0.2ms)[0m  [1mSELECT "layers".* FROM "layers"[0m
+  Rendered layers/_layer.json.jbuilder (0.5ms)
+  Rendered layers/_layer.json.jbuilder (0.4ms)
+  Rendered layers/_layer.json.jbuilder (0.6ms)
+  Rendered layers/_layer.json.jbuilder (0.4ms)
+  Rendered layers/_layer.json.jbuilder (0.9ms)
+  Rendered layers/index.json.jbuilder (12.3ms)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/layers.json" for ::1 at 2017-05-29 17:01:53 +0300
+Processing by LayersController#index as JSON
+  [1m[35mLayer Load (0.2ms)[0m  SELECT "layers".* FROM "layers"
+  Rendered layers/_layer.json.jbuilder (0.8ms)
+  Rendered layers/_layer.json.jbuilder (0.4ms)
+  Rendered layers/_layer.json.jbuilder (0.7ms)
+  Rendered layers/_layer.json.jbuilder (0.4ms)
+  Rendered layers/_layer.json.jbuilder (0.3ms)
+  Rendered layers/index.json.jbuilder (8.8ms)
+Completed 200 OK in 15ms (Views: 14.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/layers.json" for ::1 at 2017-05-29 17:02:12 +0300
+Processing by LayersController#index as JSON
+  [1m[36mLayer Load (0.3ms)[0m  [1mSELECT "layers".* FROM "layers"[0m
+  Rendered layers/_layer.json.jbuilder (0.5ms)
+  Rendered layers/_layer.json.jbuilder (0.4ms)
+  Rendered layers/_layer.json.jbuilder (0.5ms)
+  Rendered layers/_layer.json.jbuilder (0.4ms)
+  Rendered layers/_layer.json.jbuilder (0.6ms)
+  Rendered layers/index.json.jbuilder (8.7ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/layers.json" for ::1 at 2017-05-29 17:03:12 +0300
+Processing by LayersController#index as JSON
+  [1m[35mLayer Load (0.3ms)[0m  SELECT "layers".* FROM "layers"
+  Rendered layers/_layer.json.jbuilder (0.7ms)
+  Rendered layers/_layer.json.jbuilder (0.6ms)
+  Rendered layers/_layer.json.jbuilder (0.6ms)
+  Rendered layers/_layer.json.jbuilder (0.4ms)
+  Rendered layers/_layer.json.jbuilder (0.4ms)
+  Rendered layers/index.json.jbuilder (9.8ms)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/layers.json" for ::1 at 2017-05-29 17:03:25 +0300
+Processing by LayersController#index as JSON
+  [1m[36mLayer Load (0.2ms)[0m  [1mSELECT "layers".* FROM "layers"[0m
+  Rendered layers/_layer.json.jbuilder (0.6ms)
+  Rendered layers/_layer.json.jbuilder (0.4ms)
+  Rendered layers/_layer.json.jbuilder (0.3ms)
+  Rendered layers/_layer.json.jbuilder (0.3ms)
+  Rendered layers/_layer.json.jbuilder (0.6ms)
+  Rendered layers/index.json.jbuilder (8.0ms)
+Completed 200 OK in 16ms (Views: 15.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/layers.json" for ::1 at 2017-05-29 17:05:03 +0300
+Processing by LayersController#index as JSON
+  [1m[35mLayer Load (0.3ms)[0m  SELECT "layers".* FROM "layers"
+  Rendered layers/_layer.json.jbuilder (0.7ms)
+  Rendered layers/_layer.json.jbuilder (0.6ms)
+  Rendered layers/_layer.json.jbuilder (0.5ms)
+  Rendered layers/_layer.json.jbuilder (0.5ms)
+  Rendered layers/_layer.json.jbuilder (0.7ms)
+  Rendered layers/index.json.jbuilder (10.7ms)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/layers.json" for ::1 at 2017-05-29 17:05:36 +0300
+Processing by LayersController#index as JSON
+  [1m[36mLayer Load (0.3ms)[0m  [1mSELECT "layers".* FROM "layers"[0m
+  Rendered layers/_layer.json.jbuilder (0.8ms)
+  Rendered layers/_layer.json.jbuilder (0.5ms)
+  Rendered layers/_layer.json.jbuilder (0.6ms)
+  Rendered layers/_layer.json.jbuilder (0.5ms)
+  Rendered layers/_layer.json.jbuilder (0.4ms)
+  Rendered layers/index.json.jbuilder (10.3ms)
+Completed 200 OK in 17ms (Views: 16.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/layers.json" for ::1 at 2017-05-29 17:11:31 +0300
+Processing by LayersController#index as JSON
+  [1m[35mLayer Load (0.2ms)[0m  SELECT "layers".* FROM "layers"
+  Rendered layers/_layer.json.jbuilder (0.6ms)
+  Rendered layers/_layer.json.jbuilder (0.4ms)
+  Rendered layers/_layer.json.jbuilder (0.6ms)
+  Rendered layers/_layer.json.jbuilder (0.4ms)
+  Rendered layers/_layer.json.jbuilder (0.4ms)
+  Rendered layers/index.json.jbuilder (9.2ms)
+Completed 200 OK in 16ms (Views: 15.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/layers.json" for ::1 at 2017-05-29 17:11:59 +0300
+Processing by LayersController#index as JSON
+  [1m[36mLayer Load (0.4ms)[0m  [1mSELECT "layers".* FROM "layers"[0m
+  Rendered layers/_layer.json.jbuilder (0.5ms)
+  Rendered layers/_layer.json.jbuilder (0.4ms)
+  Rendered layers/_layer.json.jbuilder (0.6ms)
+  Rendered layers/_layer.json.jbuilder (0.4ms)
+  Rendered layers/_layer.json.jbuilder (0.5ms)
+  Rendered layers/index.json.jbuilder (11.1ms)
+Completed 200 OK in 17ms (Views: 16.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/layers.json" for ::1 at 2017-05-29 17:12:24 +0300
+Processing by LayersController#index as JSON
+  [1m[35mLayer Load (0.3ms)[0m  SELECT "layers".* FROM "layers"
+  Rendered layers/_layer.json.jbuilder (0.8ms)
+  Rendered layers/_layer.json.jbuilder (0.5ms)
+  Rendered layers/_layer.json.jbuilder (0.3ms)
+  Rendered layers/_layer.json.jbuilder (0.6ms)
+  Rendered layers/_layer.json.jbuilder (0.5ms)
+  Rendered layers/index.json.jbuilder (9.1ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/layers.json" for ::1 at 2017-05-29 20:16:40 +0300
+Processing by LayersController#index as JSON
+  [1m[36mLayer Load (2.3ms)[0m  [1mSELECT "layers".* FROM "layers"[0m
+  Rendered layers/_layer.json.jbuilder (4.4ms)
+  Rendered layers/_layer.json.jbuilder (0.5ms)
+  Rendered layers/_layer.json.jbuilder (0.6ms)
+  Rendered layers/_layer.json.jbuilder (0.8ms)
+  Rendered layers/_layer.json.jbuilder (3.0ms)
+  Rendered layers/index.json.jbuilder (45.5ms)
+Completed 200 OK in 72ms (Views: 57.6ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/layers.json" for ::1 at 2017-05-29 20:16:58 +0300
+Processing by LayersController#index as JSON
+  [1m[35mLayer Load (0.3ms)[0m  SELECT "layers".* FROM "layers"
+  Rendered layers/_layer.json.jbuilder (0.9ms)
+  Rendered layers/_layer.json.jbuilder (0.8ms)
+  Rendered layers/_layer.json.jbuilder (0.8ms)
+  Rendered layers/_layer.json.jbuilder (0.5ms)
+  Rendered layers/_layer.json.jbuilder (0.5ms)
+  Rendered layers/index.json.jbuilder (13.2ms)
+Completed 200 OK in 22ms (Views: 20.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/layers.json" for ::1 at 2017-05-29 20:17:09 +0300
+Processing by LayersController#index as JSON
+  [1m[36mLayer Load (0.3ms)[0m  [1mSELECT "layers".* FROM "layers"[0m
+  Rendered layers/_layer.json.jbuilder (0.9ms)
+  Rendered layers/_layer.json.jbuilder (0.4ms)
+  Rendered layers/_layer.json.jbuilder (0.5ms)
+  Rendered layers/_layer.json.jbuilder (0.4ms)
+  Rendered layers/_layer.json.jbuilder (0.7ms)
+  Rendered layers/index.json.jbuilder (11.0ms)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Signal"], ["created_at", "2017-05-31 11:42:53.535536"], ["updated_at", "2017-05-31 11:42:53.535536"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Metrics"], ["created_at", "2017-05-31 11:42:53.541583"], ["updated_at", "2017-05-31 11:42:53.541583"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Indicies"], ["created_at", "2017-05-31 11:42:53.543650"], ["updated_at", "2017-05-31 11:42:53.543650"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Logic"], ["created_at", "2017-05-31 11:42:53.545975"], ["updated_at", "2017-05-31 11:42:53.545975"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Application"], ["created_at", "2017-05-31 11:42:53.548166"], ["updated_at", "2017-05-31 11:42:53.548166"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Audio Biofeedback for Poker Players"], ["abstract", "Abstract text here"], ["year", 2001], ["journal", "Nature"], ["created_at", "2017-05-31 11:42:53.566145"], ["updated_at", "2017-05-31 11:42:53.566145"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Neurofeedback Meditation in Virtual Reality"], ["abstract", "Abstract text here"], ["year", 2005], ["journal", "Science"], ["created_at", "2017-05-31 11:42:53.569719"], ["updated_at", "2017-05-31 11:42:53.569719"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Relevance Annotation for Scientific Text"], ["abstract", "Abstract text here"], ["year", 2007], ["journal", "Nature Neuroscience"], ["created_at", "2017-05-31 11:42:53.572063"], ["updated_at", "2017-05-31 11:42:53.572063"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Affective Annotation for News Reading"], ["abstract", "Abstract text here"], ["year", 2016], ["journal", "Current Biology"], ["created_at", "2017-05-31 11:42:53.574380"], ["updated_at", "2017-05-31 11:42:53.574380"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Humor Detection"], ["abstract", "Abstract text here"], ["year", 2016], ["journal", "Science"], ["created_at", "2017-05-31 11:42:53.576681"], ["updated_at", "2017-05-31 11:42:53.576681"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Datamining Phys. Data for Game Design"], ["abstract", "Abstract text here"], ["year", 2013], ["journal", "Nature"], ["created_at", "2017-05-31 11:42:53.578889"], ["updated_at", "2017-05-31 11:42:53.578889"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["url", "www.google.com"], ["publication_id", 1], ["link_type", "web"], ["created_at", "2017-05-31 11:42:53.605824"], ["updated_at", "2017-05-31 11:42:53.605824"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "www.google.com"], ["publication_id", 2], ["link_type", "web"], ["created_at", "2017-05-31 11:42:53.609570"], ["updated_at", "2017-05-31 11:42:53.609570"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["url", "www.google.com"], ["publication_id", 3], ["link_type", "web"], ["created_at", "2017-05-31 11:42:53.612636"], ["updated_at", "2017-05-31 11:42:53.612636"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "www.google.com"], ["publication_id", 4], ["link_type", "web"], ["created_at", "2017-05-31 11:42:53.615518"], ["updated_at", "2017-05-31 11:42:53.615518"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["url", "www.google.com"], ["publication_id", 5], ["link_type", "web"], ["created_at", "2017-05-31 11:42:53.618402"], ["updated_at", "2017-05-31 11:42:53.618402"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "www.google.com"], ["publication_id", 6], ["link_type", "web"], ["created_at", "2017-05-31 11:42:53.621069"], ["updated_at", "2017-05-31 11:42:53.621069"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+
+
+Started GET "/" for ::1 at 2017-05-31 14:43:38 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/mikkotiainen/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/templates/rails/welcome/index.html.erb (2.3ms)
+Completed 200 OK in 26ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/publications" for ::1 at 2017-05-31 14:43:46 +0300
+Processing by PublicationsController#index as HTML
+  [1m[35mPublication Load (1.0ms)[0m  SELECT "publications".* FROM "publications"
+  Rendered publications/index.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 391ms (Views: 351.8ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/links" for ::1 at 2017-05-31 14:43:53 +0300
+Processing by LinksController#index as HTML
+  [1m[36mLink Load (0.6ms)[0m  [1mSELECT "links".* FROM "links"[0m
+  Rendered links/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 74ms (Views: 67.3ms | ActiveRecord: 0.9ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Signal"], ["created_at", "2017-05-31 12:02:27.180834"], ["updated_at", "2017-05-31 12:02:27.180834"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Metrics"], ["created_at", "2017-05-31 12:02:27.187657"], ["updated_at", "2017-05-31 12:02:27.187657"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Indicies"], ["created_at", "2017-05-31 12:02:27.189867"], ["updated_at", "2017-05-31 12:02:27.189867"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Logic"], ["created_at", "2017-05-31 12:02:27.191891"], ["updated_at", "2017-05-31 12:02:27.191891"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Application"], ["created_at", "2017-05-31 12:02:27.193824"], ["updated_at", "2017-05-31 12:02:27.193824"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Audio Biofeedback for Poker Players"], ["abstract", "Abstract text here"], ["year", 2001], ["journal", "Nature"], ["created_at", "2017-05-31 12:02:27.212272"], ["updated_at", "2017-05-31 12:02:27.212272"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Neurofeedback Meditation in Virtual Reality"], ["abstract", "Abstract text here"], ["year", 2005], ["journal", "Science"], ["created_at", "2017-05-31 12:02:27.215740"], ["updated_at", "2017-05-31 12:02:27.215740"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Relevance Annotation for Scientific Text"], ["abstract", "Abstract text here"], ["year", 2007], ["journal", "Nature Neuroscience"], ["created_at", "2017-05-31 12:02:27.218115"], ["updated_at", "2017-05-31 12:02:27.218115"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Affective Annotation for News Reading"], ["abstract", "Abstract text here"], ["year", 2016], ["journal", "Current Biology"], ["created_at", "2017-05-31 12:02:27.220156"], ["updated_at", "2017-05-31 12:02:27.220156"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Humor Detection"], ["abstract", "Abstract text here"], ["year", 2016], ["journal", "Science"], ["created_at", "2017-05-31 12:02:27.222220"], ["updated_at", "2017-05-31 12:02:27.222220"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Datamining Phys. Data for Game Design"], ["abstract", "Abstract text here"], ["year", 2013], ["journal", "Nature"], ["created_at", "2017-05-31 12:02:27.224453"], ["updated_at", "2017-05-31 12:02:27.224453"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Signal"], ["created_at", "2017-05-31 12:03:12.187880"], ["updated_at", "2017-05-31 12:03:12.187880"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Metrics"], ["created_at", "2017-05-31 12:03:12.192994"], ["updated_at", "2017-05-31 12:03:12.192994"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Indicies"], ["created_at", "2017-05-31 12:03:12.194974"], ["updated_at", "2017-05-31 12:03:12.194974"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Logic"], ["created_at", "2017-05-31 12:03:12.197237"], ["updated_at", "2017-05-31 12:03:12.197237"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Application"], ["created_at", "2017-05-31 12:03:12.199289"], ["updated_at", "2017-05-31 12:03:12.199289"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Audio Biofeedback for Poker Players"], ["abstract", "Abstract text here"], ["year", 2001], ["journal", "Nature"], ["created_at", "2017-05-31 12:03:12.216608"], ["updated_at", "2017-05-31 12:03:12.216608"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Neurofeedback Meditation in Virtual Reality"], ["abstract", "Abstract text here"], ["year", 2005], ["journal", "Science"], ["created_at", "2017-05-31 12:03:12.219299"], ["updated_at", "2017-05-31 12:03:12.219299"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Relevance Annotation for Scientific Text"], ["abstract", "Abstract text here"], ["year", 2007], ["journal", "Nature Neuroscience"], ["created_at", "2017-05-31 12:03:12.221490"], ["updated_at", "2017-05-31 12:03:12.221490"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Affective Annotation for News Reading"], ["abstract", "Abstract text here"], ["year", 2016], ["journal", "Current Biology"], ["created_at", "2017-05-31 12:03:12.223585"], ["updated_at", "2017-05-31 12:03:12.223585"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Humor Detection"], ["abstract", "Abstract text here"], ["year", 2016], ["journal", "Science"], ["created_at", "2017-05-31 12:03:12.225659"], ["updated_at", "2017-05-31 12:03:12.225659"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Datamining Phys. Data for Game Design"], ["abstract", "Abstract text here"], ["year", 2013], ["journal", "Nature"], ["created_at", "2017-05-31 12:03:12.228087"], ["updated_at", "2017-05-31 12:03:12.228087"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["url", "www.nature.com"], ["publication_id", 13], ["link_type", "web"], ["created_at", "2017-05-31 12:03:12.254294"], ["updated_at", "2017-05-31 12:03:12.254294"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "www.science.com"], ["publication_id", 14], ["link_type", "web"], ["created_at", "2017-05-31 12:03:12.257736"], ["updated_at", "2017-05-31 12:03:12.257736"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["url", "www.github.com"], ["publication_id", 14], ["link_type", "github"], ["created_at", "2017-05-31 12:03:12.260182"], ["updated_at", "2017-05-31 12:03:12.260182"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "www.suomi24.fi"], ["publication_id", 15], ["link_type", "web"], ["created_at", "2017-05-31 12:03:12.262741"], ["updated_at", "2017-05-31 12:03:12.262741"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["url", "cs.helsinki.fi"], ["publication_id", 16], ["link_type", "web"], ["created_at", "2017-05-31 12:03:12.265280"], ["updated_at", "2017-05-31 12:03:12.265280"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "www.science.com"], ["publication_id", 17], ["link_type", "web"], ["created_at", "2017-05-31 12:03:12.267826"], ["updated_at", "2017-05-31 12:03:12.267826"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["url", "www.nature.com"], ["publication_id", 18], ["link_type", "web"], ["created_at", "2017-05-31 12:03:12.270472"], ["updated_at", "2017-05-31 12:03:12.270472"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/links" for ::1 at 2017-05-31 15:03:28 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LinksController#index as HTML
+  [1m[35mLink Load (0.6ms)[0m  SELECT "links".* FROM "links"
+  Rendered links/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 405ms (Views: 384.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/links/7" for ::1 at 2017-05-31 15:03:39 +0300
+Processing by LinksController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mLink Load (0.4ms)[0m  [1mSELECT  "links".* FROM "links" WHERE "links"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered links/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 75ms (Views: 51.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/publications" for ::1 at 2017-05-31 15:04:00 +0300
+Processing by PublicationsController#index as HTML
+  [1m[35mPublication Load (0.2ms)[0m  SELECT "publications".* FROM "publications"
+  Rendered publications/index.html.erb within layouts/application (19.3ms)
+Completed 200 OK in 108ms (Views: 76.5ms | ActiveRecord: 0.4ms)
+  [1m[36m (1.3ms)[0m  [1mCREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "authors_publications" ("publication_id" integer NOT NULL, "author_id" integer NOT NULL) 
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "layer_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "categories_publications" ("publication_id" integer NOT NULL, "category_id" integer NOT NULL) 
+  [1m[36m (1.2ms)[0m  [1mCREATE TABLE "layers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "links" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "url" varchar, "publication_id" integer, "link_type" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "publications" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "abstract" varchar, "year" integer, "journal" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (2.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525193931')[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525121507')
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525121621')[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525125708')
+  [1m[36m (0.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525134658')[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525134810')
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525134948')[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525145441')
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "authors_publications" ("publication_id" integer NOT NULL, "author_id" integer NOT NULL) 
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "layer_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "categories_publications" ("publication_id" integer NOT NULL, "category_id" integer NOT NULL) 
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "layers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "links" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "url" varchar, "publication_id" integer, "link_type" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "publications" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "abstract" varchar, "year" integer, "journal" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525193931')[0m
+  [1m[35m (0.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525121507')
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525121621')[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525125708')
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525134658')[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525134810')
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525134948')[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525145441')
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Signal"], ["created_at", "2017-05-31 12:05:40.363918"], ["updated_at", "2017-05-31 12:05:40.363918"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Metrics"], ["created_at", "2017-05-31 12:05:40.371197"], ["updated_at", "2017-05-31 12:05:40.371197"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Indicies"], ["created_at", "2017-05-31 12:05:40.373856"], ["updated_at", "2017-05-31 12:05:40.373856"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Logic"], ["created_at", "2017-05-31 12:05:40.375911"], ["updated_at", "2017-05-31 12:05:40.375911"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Application"], ["created_at", "2017-05-31 12:05:40.377886"], ["updated_at", "2017-05-31 12:05:40.377886"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Audio Biofeedback for Poker Players"], ["abstract", "Abstract text here"], ["year", 2001], ["journal", "Nature"], ["created_at", "2017-05-31 12:05:40.394905"], ["updated_at", "2017-05-31 12:05:40.394905"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Neurofeedback Meditation in Virtual Reality"], ["abstract", "Abstract text here"], ["year", 2005], ["journal", "Science"], ["created_at", "2017-05-31 12:05:40.398429"], ["updated_at", "2017-05-31 12:05:40.398429"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Relevance Annotation for Scientific Text"], ["abstract", "Abstract text here"], ["year", 2007], ["journal", "Nature Neuroscience"], ["created_at", "2017-05-31 12:05:40.401082"], ["updated_at", "2017-05-31 12:05:40.401082"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Affective Annotation for News Reading"], ["abstract", "Abstract text here"], ["year", 2016], ["journal", "Current Biology"], ["created_at", "2017-05-31 12:05:40.403495"], ["updated_at", "2017-05-31 12:05:40.403495"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Humor Detection"], ["abstract", "Abstract text here"], ["year", 2016], ["journal", "Science"], ["created_at", "2017-05-31 12:05:40.405800"], ["updated_at", "2017-05-31 12:05:40.405800"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Datamining Phys. Data for Game Design"], ["abstract", "Abstract text here"], ["year", 2013], ["journal", "Nature"], ["created_at", "2017-05-31 12:05:40.407849"], ["updated_at", "2017-05-31 12:05:40.407849"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["url", "www.nature.com"], ["publication_id", 1], ["link_type", "web"], ["created_at", "2017-05-31 12:05:40.433782"], ["updated_at", "2017-05-31 12:05:40.433782"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "www.science.com"], ["publication_id", 2], ["link_type", "web"], ["created_at", "2017-05-31 12:05:40.437377"], ["updated_at", "2017-05-31 12:05:40.437377"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["url", "www.github.com"], ["publication_id", 2], ["link_type", "github"], ["created_at", "2017-05-31 12:05:40.440005"], ["updated_at", "2017-05-31 12:05:40.440005"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "www.suomi24.fi"], ["publication_id", 3], ["link_type", "web"], ["created_at", "2017-05-31 12:05:40.443212"], ["updated_at", "2017-05-31 12:05:40.443212"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["url", "cs.helsinki.fi"], ["publication_id", 4], ["link_type", "web"], ["created_at", "2017-05-31 12:05:40.445999"], ["updated_at", "2017-05-31 12:05:40.445999"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "www.science.com"], ["publication_id", 5], ["link_type", "web"], ["created_at", "2017-05-31 12:05:40.448523"], ["updated_at", "2017-05-31 12:05:40.448523"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["url", "www.nature.com"], ["publication_id", 6], ["link_type", "web"], ["created_at", "2017-05-31 12:05:40.450957"], ["updated_at", "2017-05-31 12:05:40.450957"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/publications" for ::1 at 2017-05-31 15:06:12 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PublicationsController#index as HTML
+  [1m[35mPublication Load (0.6ms)[0m  SELECT "publications".* FROM "publications"
+  Rendered publications/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 371ms (Views: 340.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/links" for ::1 at 2017-05-31 15:06:19 +0300
+Processing by LinksController#index as HTML
+  [1m[36mLink Load (0.5ms)[0m  [1mSELECT "links".* FROM "links"[0m
+  Rendered links/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 57ms (Views: 51.8ms | ActiveRecord: 0.8ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Signal"], ["created_at", "2017-05-31 12:49:06.557517"], ["updated_at", "2017-05-31 12:49:06.557517"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Metrics"], ["created_at", "2017-05-31 12:49:06.563287"], ["updated_at", "2017-05-31 12:49:06.563287"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Indicies"], ["created_at", "2017-05-31 12:49:06.565347"], ["updated_at", "2017-05-31 12:49:06.565347"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Logic"], ["created_at", "2017-05-31 12:49:06.567185"], ["updated_at", "2017-05-31 12:49:06.567185"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Application"], ["created_at", "2017-05-31 12:49:06.568990"], ["updated_at", "2017-05-31 12:49:06.568990"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Audio Biofeedback for Poker Players"], ["abstract", "Abstract text here"], ["year", 2001], ["journal", "Nature"], ["created_at", "2017-05-31 12:49:06.587935"], ["updated_at", "2017-05-31 12:49:06.587935"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Neurofeedback Meditation in Virtual Reality"], ["abstract", "Abstract text here"], ["year", 2005], ["journal", "Science"], ["created_at", "2017-05-31 12:49:06.591099"], ["updated_at", "2017-05-31 12:49:06.591099"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Relevance Annotation for Scientific Text"], ["abstract", "Abstract text here"], ["year", 2007], ["journal", "Nature Neuroscience"], ["created_at", "2017-05-31 12:49:06.593494"], ["updated_at", "2017-05-31 12:49:06.593494"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Affective Annotation for News Reading"], ["abstract", "Abstract text here"], ["year", 2016], ["journal", "Current Biology"], ["created_at", "2017-05-31 12:49:06.595626"], ["updated_at", "2017-05-31 12:49:06.595626"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Humor Detection"], ["abstract", "Abstract text here"], ["year", 2016], ["journal", "Science"], ["created_at", "2017-05-31 12:49:06.597838"], ["updated_at", "2017-05-31 12:49:06.597838"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Datamining Phys. Data for Game Design"], ["abstract", "Abstract text here"], ["year", 2013], ["journal", "Nature"], ["created_at", "2017-05-31 12:49:06.600314"], ["updated_at", "2017-05-31 12:49:06.600314"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["url", "www.nature.com"], ["publication_id", 7], ["link_type", "web"], ["created_at", "2017-05-31 12:49:06.627330"], ["updated_at", "2017-05-31 12:49:06.627330"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "www.science.com"], ["publication_id", 8], ["link_type", "web"], ["created_at", "2017-05-31 12:49:06.631256"], ["updated_at", "2017-05-31 12:49:06.631256"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["url", "www.github.com"], ["publication_id", 8], ["link_type", "github"], ["created_at", "2017-05-31 12:49:06.633912"], ["updated_at", "2017-05-31 12:49:06.633912"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "www.suomi24.fi"], ["publication_id", 9], ["link_type", "web"], ["created_at", "2017-05-31 12:49:06.636640"], ["updated_at", "2017-05-31 12:49:06.636640"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["url", "cs.helsinki.fi"], ["publication_id", 10], ["link_type", "web"], ["created_at", "2017-05-31 12:49:06.639221"], ["updated_at", "2017-05-31 12:49:06.639221"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "www.science.com"], ["publication_id", 11], ["link_type", "web"], ["created_at", "2017-05-31 12:49:06.642334"], ["updated_at", "2017-05-31 12:49:06.642334"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["url", "www.nature.com"], ["publication_id", 12], ["link_type", "web"], ["created_at", "2017-05-31 12:49:06.645055"], ["updated_at", "2017-05-31 12:49:06.645055"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "authors" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Ilkka Kosunen"], ["created_at", "2017-05-31 12:49:06.662433"], ["updated_at", "2017-05-31 12:49:06.662433"]]
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "authors_publications" ("publication_id", "author_id") VALUES (?, ?)  [["publication_id", 7], ["author_id", 1]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "authors" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Kosu Ilkkanen"], ["created_at", "2017-05-31 12:49:06.675098"], ["updated_at", "2017-05-31 12:49:06.675098"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "authors_publications" ("publication_id", "author_id") VALUES (?, ?)  [["publication_id", 7], ["author_id", 2]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/publications" for ::1 at 2017-05-31 15:49:15 +0300
+Processing by PublicationsController#index as HTML
+  [1m[35mPublication Load (1.5ms)[0m  SELECT "publications".* FROM "publications"
+  Rendered publications/index.html.erb within layouts/application (34.8ms)
+Completed 200 OK in 191ms (Views: 180.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/publications" for ::1 at 2017-05-31 15:49:24 +0300
+Processing by PublicationsController#index as HTML
+  [1m[36mPublication Load (0.6ms)[0m  [1mSELECT "publications".* FROM "publications"[0m
+  Rendered publications/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 42ms (Views: 40.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/publications" for ::1 at 2017-05-31 15:49:34 +0300
+Processing by PublicationsController#index as HTML
+  [1m[35mPublication Load (0.1ms)[0m  SELECT "publications".* FROM "publications"
+  Rendered publications/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 30ms (Views: 29.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/authors" for ::1 at 2017-05-31 15:49:45 +0300
+Processing by AuthorsController#index as HTML
+  [1m[36mAuthor Load (0.1ms)[0m  [1mSELECT "authors".* FROM "authors"[0m
+  Rendered authors/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 36ms (Views: 29.2ms | ActiveRecord: 0.3ms)
+  [1m[36m (1.4ms)[0m  [1mCREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "authors_publications" ("publication_id" integer NOT NULL, "author_id" integer NOT NULL) 
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "layer_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "categories_publications" ("publication_id" integer NOT NULL, "category_id" integer NOT NULL) 
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "layers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "links" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "url" varchar, "publication_id" integer, "link_type" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "publications" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "abstract" varchar, "year" integer, "journal" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525193931')[0m
+  [1m[35m (0.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525121507')
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525121621')[0m
+  [1m[35m (0.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525125708')
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525134658')[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525134810')
+  [1m[36m (1.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525134948')[0m
+  [1m[35m (1.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525145441')
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "authors_publications" ("publication_id" integer NOT NULL, "author_id" integer NOT NULL) 
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "layer_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "categories_publications" ("publication_id" integer NOT NULL, "category_id" integer NOT NULL) 
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "layers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "links" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "url" varchar, "publication_id" integer, "link_type" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.2ms)[0m  [1mCREATE TABLE "publications" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "abstract" varchar, "year" integer, "journal" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.6ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525193931')[0m
+  [1m[35m (0.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525121507')
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525121621')[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525125708')
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525134658')[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525134810')
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525134948')[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525145441')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Signal"], ["created_at", "2017-05-31 12:53:19.704599"], ["updated_at", "2017-05-31 12:53:19.704599"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Metrics"], ["created_at", "2017-05-31 12:53:19.710544"], ["updated_at", "2017-05-31 12:53:19.710544"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Indicies"], ["created_at", "2017-05-31 12:53:19.713475"], ["updated_at", "2017-05-31 12:53:19.713475"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Logic"], ["created_at", "2017-05-31 12:53:19.715919"], ["updated_at", "2017-05-31 12:53:19.715919"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Application"], ["created_at", "2017-05-31 12:53:19.718209"], ["updated_at", "2017-05-31 12:53:19.718209"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Audio Biofeedback for Poker Players"], ["abstract", "Abstract text here"], ["year", 2001], ["journal", "Nature"], ["created_at", "2017-05-31 12:53:19.738529"], ["updated_at", "2017-05-31 12:53:19.738529"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Neurofeedback Meditation in Virtual Reality"], ["abstract", "Abstract text here"], ["year", 2005], ["journal", "Science"], ["created_at", "2017-05-31 12:53:19.741390"], ["updated_at", "2017-05-31 12:53:19.741390"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Relevance Annotation for Scientific Text"], ["abstract", "Abstract text here"], ["year", 2007], ["journal", "Nature Neuroscience"], ["created_at", "2017-05-31 12:53:19.743815"], ["updated_at", "2017-05-31 12:53:19.743815"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Affective Annotation for News Reading"], ["abstract", "Abstract text here"], ["year", 2016], ["journal", "Current Biology"], ["created_at", "2017-05-31 12:53:19.746464"], ["updated_at", "2017-05-31 12:53:19.746464"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Humor Detection"], ["abstract", "Abstract text here"], ["year", 2016], ["journal", "Science"], ["created_at", "2017-05-31 12:53:19.748821"], ["updated_at", "2017-05-31 12:53:19.748821"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Datamining Phys. Data for Game Design"], ["abstract", "Abstract text here"], ["year", 2013], ["journal", "Nature"], ["created_at", "2017-05-31 12:53:19.751275"], ["updated_at", "2017-05-31 12:53:19.751275"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["url", "www.nature.com"], ["publication_id", 1], ["link_type", "web"], ["created_at", "2017-05-31 12:53:19.777696"], ["updated_at", "2017-05-31 12:53:19.777696"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "www.science.com"], ["publication_id", 2], ["link_type", "web"], ["created_at", "2017-05-31 12:53:19.781450"], ["updated_at", "2017-05-31 12:53:19.781450"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["url", "www.github.com"], ["publication_id", 2], ["link_type", "github"], ["created_at", "2017-05-31 12:53:19.784459"], ["updated_at", "2017-05-31 12:53:19.784459"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "www.suomi24.fi"], ["publication_id", 3], ["link_type", "web"], ["created_at", "2017-05-31 12:53:19.787535"], ["updated_at", "2017-05-31 12:53:19.787535"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["url", "cs.helsinki.fi"], ["publication_id", 4], ["link_type", "web"], ["created_at", "2017-05-31 12:53:19.790769"], ["updated_at", "2017-05-31 12:53:19.790769"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "www.science.com"], ["publication_id", 5], ["link_type", "web"], ["created_at", "2017-05-31 12:53:19.793717"], ["updated_at", "2017-05-31 12:53:19.793717"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["url", "www.nature.com"], ["publication_id", 6], ["link_type", "web"], ["created_at", "2017-05-31 12:53:19.796650"], ["updated_at", "2017-05-31 12:53:19.796650"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mPublication Load (0.2ms)[0m  SELECT "publications".* FROM "publications" WHERE "publications"."id" IN (1, 2, 3)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "authors" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Pasi Kosunen"], ["created_at", "2017-05-31 12:53:19.830519"], ["updated_at", "2017-05-31 12:53:19.830519"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "authors_publications" ("publication_id", "author_id") VALUES (?, ?)[0m  [["publication_id", 1], ["author_id", 1]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "authors_publications" ("publication_id", "author_id") VALUES (?, ?)  [["publication_id", 2], ["author_id", 1]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "authors_publications" ("publication_id", "author_id") VALUES (?, ?)[0m  [["publication_id", 3], ["author_id", 1]]
+  [1m[35m (1.0ms)[0m  commit transaction
+
+
+Started GET "/publications" for ::1 at 2017-05-31 15:53:23 +0300
+Processing by PublicationsController#index as HTML
+  [1m[35mPublication Load (0.2ms)[0m  SELECT "publications".* FROM "publications"
+  Rendered publications/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 56ms (Views: 55.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/publications" for ::1 at 2017-05-31 15:53:32 +0300
+Processing by PublicationsController#index as HTML
+  [1m[36mPublication Load (0.2ms)[0m  [1mSELECT "publications".* FROM "publications"[0m
+  Rendered publications/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 38ms (Views: 36.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/publications" for ::1 at 2017-05-31 15:53:57 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PublicationsController#index as HTML
+  [1m[35mPublication Load (0.5ms)[0m  SELECT "publications".* FROM "publications"
+  Rendered publications/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 353ms (Views: 324.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/authors" for ::1 at 2017-05-31 15:54:03 +0300
+Processing by AuthorsController#index as HTML
+  [1m[36mAuthor Load (0.5ms)[0m  [1mSELECT "authors".* FROM "authors"[0m
+  Rendered authors/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 49ms (Views: 42.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/authors/1" for ::1 at 2017-05-31 15:54:07 +0300
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAuthor Load (0.2ms)[0m  SELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered authors/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 78ms (Views: 49.5ms | ActiveRecord: 0.2ms)
+  [1m[36m (1.3ms)[0m  [1mCREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "authors_publications" ("publication_id" integer NOT NULL, "author_id" integer NOT NULL) 
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "layer_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "categories_publications" ("publication_id" integer NOT NULL, "category_id" integer NOT NULL) 
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "layers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "links" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "url" varchar, "publication_id" integer, "link_type" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "publications" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "abstract" varchar, "year" integer, "journal" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525193931')[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525121507')
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525121621')[0m
+  [1m[35m (1.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525125708')
+  [1m[36m (1.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525134658')[0m
+  [1m[35m (0.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525134810')
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525134948')[0m
+  [1m[35m (0.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525145441')
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "authors_publications" ("publication_id" integer NOT NULL, "author_id" integer NOT NULL) 
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "layer_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "categories_publications" ("publication_id" integer NOT NULL, "category_id" integer NOT NULL) 
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "layers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "links" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "url" varchar, "publication_id" integer, "link_type" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "publications" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "abstract" varchar, "year" integer, "journal" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525193931')[0m
+  [1m[35m (0.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525121507')
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525121621')[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525125708')
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525134658')[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525134810')
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525134948')[0m
+  [1m[35m (0.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525145441')
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Signal"], ["created_at", "2017-05-31 12:55:12.448416"], ["updated_at", "2017-05-31 12:55:12.448416"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Metrics"], ["created_at", "2017-05-31 12:55:12.453333"], ["updated_at", "2017-05-31 12:55:12.453333"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Indicies"], ["created_at", "2017-05-31 12:55:12.455887"], ["updated_at", "2017-05-31 12:55:12.455887"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Logic"], ["created_at", "2017-05-31 12:55:12.458363"], ["updated_at", "2017-05-31 12:55:12.458363"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Application"], ["created_at", "2017-05-31 12:55:12.461954"], ["updated_at", "2017-05-31 12:55:12.461954"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Audio Biofeedback for Poker Players"], ["abstract", "Abstract text here"], ["year", 2001], ["journal", "Nature"], ["created_at", "2017-05-31 12:55:12.485058"], ["updated_at", "2017-05-31 12:55:12.485058"]]
+  [1m[36m (5.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Neurofeedback Meditation in Virtual Reality"], ["abstract", "Abstract text here"], ["year", 2005], ["journal", "Science"], ["created_at", "2017-05-31 12:55:12.495885"], ["updated_at", "2017-05-31 12:55:12.495885"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Relevance Annotation for Scientific Text"], ["abstract", "Abstract text here"], ["year", 2007], ["journal", "Nature Neuroscience"], ["created_at", "2017-05-31 12:55:12.498821"], ["updated_at", "2017-05-31 12:55:12.498821"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Affective Annotation for News Reading"], ["abstract", "Abstract text here"], ["year", 2016], ["journal", "Current Biology"], ["created_at", "2017-05-31 12:55:12.501104"], ["updated_at", "2017-05-31 12:55:12.501104"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Humor Detection"], ["abstract", "Abstract text here"], ["year", 2016], ["journal", "Science"], ["created_at", "2017-05-31 12:55:12.503375"], ["updated_at", "2017-05-31 12:55:12.503375"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Datamining Phys. Data for Game Design"], ["abstract", "Abstract text here"], ["year", 2013], ["journal", "Nature"], ["created_at", "2017-05-31 12:55:12.505649"], ["updated_at", "2017-05-31 12:55:12.505649"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["url", "www.nature.com"], ["publication_id", 1], ["link_type", "web"], ["created_at", "2017-05-31 12:55:12.533022"], ["updated_at", "2017-05-31 12:55:12.533022"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "www.science.com"], ["publication_id", 2], ["link_type", "web"], ["created_at", "2017-05-31 12:55:12.536251"], ["updated_at", "2017-05-31 12:55:12.536251"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["url", "www.github.com"], ["publication_id", 2], ["link_type", "github"], ["created_at", "2017-05-31 12:55:12.538871"], ["updated_at", "2017-05-31 12:55:12.538871"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "www.suomi24.fi"], ["publication_id", 3], ["link_type", "web"], ["created_at", "2017-05-31 12:55:12.542103"], ["updated_at", "2017-05-31 12:55:12.542103"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["url", "cs.helsinki.fi"], ["publication_id", 4], ["link_type", "web"], ["created_at", "2017-05-31 12:55:12.545250"], ["updated_at", "2017-05-31 12:55:12.545250"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "www.science.com"], ["publication_id", 5], ["link_type", "web"], ["created_at", "2017-05-31 12:55:12.548012"], ["updated_at", "2017-05-31 12:55:12.548012"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["url", "www.nature.com"], ["publication_id", 6], ["link_type", "web"], ["created_at", "2017-05-31 12:55:12.550528"], ["updated_at", "2017-05-31 12:55:12.550528"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mPublication Load (0.2ms)[0m  SELECT "publications".* FROM "publications" WHERE "publications"."journal" IN ('1', '2', '3')
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "authors" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Pasi Kosunen"], ["created_at", "2017-05-31 12:55:12.577806"], ["updated_at", "2017-05-31 12:55:12.577806"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/authors" for ::1 at 2017-05-31 15:55:31 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AuthorsController#index as HTML
+  [1m[35mAuthor Load (0.2ms)[0m  SELECT "authors".* FROM "authors"
+  Rendered authors/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 343ms (Views: 321.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/publications" for ::1 at 2017-05-31 15:55:36 +0300
+Processing by PublicationsController#index as HTML
+  [1m[36mPublication Load (0.2ms)[0m  [1mSELECT "publications".* FROM "publications"[0m
+  Rendered publications/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 64ms (Views: 55.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/authors" for ::1 at 2017-05-31 15:55:50 +0300
+Processing by AuthorsController#index as HTML
+  [1m[35mAuthor Load (0.5ms)[0m  SELECT "authors".* FROM "authors"
+  Rendered authors/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 65ms (Views: 63.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/authors/1" for ::1 at 2017-05-31 15:55:57 +0300
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAuthor Load (1.0ms)[0m  [1mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered authors/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 70ms (Views: 31.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/authors" for ::1 at 2017-05-31 15:58:22 +0300
+Processing by AuthorsController#index as HTML
+  [1m[35mAuthor Load (0.2ms)[0m  SELECT "authors".* FROM "authors"
+  Rendered authors/index.html.erb within layouts/application (44.7ms)
+Completed 200 OK in 105ms (Views: 102.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/authors" for ::1 at 2017-05-31 15:58:35 +0300
+Processing by AuthorsController#index as HTML
+  [1m[36mAuthor Load (0.1ms)[0m  [1mSELECT "authors".* FROM "authors"[0m
+  Rendered authors/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 33ms (Views: 32.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/authors" for ::1 at 2017-05-31 16:01:31 +0300
+Processing by AuthorsController#index as HTML
+  [1m[35mAuthor Load (0.2ms)[0m  SELECT "authors".* FROM "authors"
+  [1m[36mPublication Load (1.4ms)[0m  [1mSELECT "publications".* FROM "publications" INNER JOIN "authors_publications" ON "publications"."id" = "authors_publications"."publication_id" WHERE "authors_publications"."author_id" = ?[0m  [["author_id", 1]]
+  Rendered authors/index.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 58ms (Views: 55.4ms | ActiveRecord: 1.6ms)
+  [1m[36m (1.8ms)[0m  [1mCREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "authors_publications" ("publication_id" integer NOT NULL, "author_id" integer NOT NULL) 
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "layer_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "categories_publications" ("publication_id" integer NOT NULL, "category_id" integer NOT NULL) 
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "layers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "links" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "url" varchar, "publication_id" integer, "link_type" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "publications" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "abstract" varchar, "year" integer, "journal" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525193931')[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525121507')
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525121621')[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525125708')
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525134658')[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525134810')
+  [1m[36m (2.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525134948')[0m
+  [1m[35m (1.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525145441')
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "authors_publications" ("publication_id" integer NOT NULL, "author_id" integer NOT NULL) 
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "layer_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "categories_publications" ("publication_id" integer NOT NULL, "category_id" integer NOT NULL) 
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "layers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "links" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "url" varchar, "publication_id" integer, "link_type" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "publications" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "abstract" varchar, "year" integer, "journal" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.6ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (1.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525193931')[0m
+  [1m[35m (1.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525121507')
+  [1m[36m (1.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525121621')[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525125708')
+  [1m[36m (0.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525134658')[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525134810')
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525134948')[0m
+  [1m[35m (1.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525145441')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Signal"], ["created_at", "2017-05-31 13:02:53.273291"], ["updated_at", "2017-05-31 13:02:53.273291"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Metrics"], ["created_at", "2017-05-31 13:02:53.278687"], ["updated_at", "2017-05-31 13:02:53.278687"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Indicies"], ["created_at", "2017-05-31 13:02:53.280922"], ["updated_at", "2017-05-31 13:02:53.280922"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Logic"], ["created_at", "2017-05-31 13:02:53.283287"], ["updated_at", "2017-05-31 13:02:53.283287"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Application"], ["created_at", "2017-05-31 13:02:53.285435"], ["updated_at", "2017-05-31 13:02:53.285435"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Audio Biofeedback for Poker Players"], ["abstract", "Abstract text here"], ["year", 2001], ["journal", "Nature"], ["created_at", "2017-05-31 13:02:53.303535"], ["updated_at", "2017-05-31 13:02:53.303535"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Neurofeedback Meditation in Virtual Reality"], ["abstract", "Abstract text here"], ["year", 2005], ["journal", "Science"], ["created_at", "2017-05-31 13:02:53.306547"], ["updated_at", "2017-05-31 13:02:53.306547"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Relevance Annotation for Scientific Text"], ["abstract", "Abstract text here"], ["year", 2007], ["journal", "Nature Neuroscience"], ["created_at", "2017-05-31 13:02:53.308925"], ["updated_at", "2017-05-31 13:02:53.308925"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Affective Annotation for News Reading"], ["abstract", "Abstract text here"], ["year", 2016], ["journal", "Current Biology"], ["created_at", "2017-05-31 13:02:53.311167"], ["updated_at", "2017-05-31 13:02:53.311167"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Humor Detection"], ["abstract", "Abstract text here"], ["year", 2016], ["journal", "Science"], ["created_at", "2017-05-31 13:02:53.313702"], ["updated_at", "2017-05-31 13:02:53.313702"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Datamining Phys. Data for Game Design"], ["abstract", "Abstract text here"], ["year", 2013], ["journal", "Nature"], ["created_at", "2017-05-31 13:02:53.316542"], ["updated_at", "2017-05-31 13:02:53.316542"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["url", "www.nature.com"], ["publication_id", 1], ["link_type", "web"], ["created_at", "2017-05-31 13:02:53.343111"], ["updated_at", "2017-05-31 13:02:53.343111"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "www.science.com"], ["publication_id", 2], ["link_type", "web"], ["created_at", "2017-05-31 13:02:53.346710"], ["updated_at", "2017-05-31 13:02:53.346710"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["url", "www.github.com"], ["publication_id", 2], ["link_type", "github"], ["created_at", "2017-05-31 13:02:53.349344"], ["updated_at", "2017-05-31 13:02:53.349344"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "www.suomi24.fi"], ["publication_id", 3], ["link_type", "web"], ["created_at", "2017-05-31 13:02:53.352666"], ["updated_at", "2017-05-31 13:02:53.352666"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["url", "cs.helsinki.fi"], ["publication_id", 4], ["link_type", "web"], ["created_at", "2017-05-31 13:02:53.355713"], ["updated_at", "2017-05-31 13:02:53.355713"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "www.science.com"], ["publication_id", 5], ["link_type", "web"], ["created_at", "2017-05-31 13:02:53.358894"], ["updated_at", "2017-05-31 13:02:53.358894"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["url", "www.nature.com"], ["publication_id", 6], ["link_type", "web"], ["created_at", "2017-05-31 13:02:53.361642"], ["updated_at", "2017-05-31 13:02:53.361642"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mPublication Load (0.2ms)[0m  SELECT "publications".* FROM "publications" WHERE "publications"."journal" IN ('Nature', 'Science')
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "authors" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Pasi Kosunen"], ["created_at", "2017-05-31 13:02:53.396876"], ["updated_at", "2017-05-31 13:02:53.396876"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "authors_publications" ("publication_id", "author_id") VALUES (?, ?)[0m  [["publication_id", 1], ["author_id", 1]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "authors_publications" ("publication_id", "author_id") VALUES (?, ?)  [["publication_id", 2], ["author_id", 1]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "authors_publications" ("publication_id", "author_id") VALUES (?, ?)[0m  [["publication_id", 5], ["author_id", 1]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "authors_publications" ("publication_id", "author_id") VALUES (?, ?)  [["publication_id", 6], ["author_id", 1]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/authors" for ::1 at 2017-05-31 16:03:13 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AuthorsController#index as HTML
+  [1m[35mAuthor Load (0.2ms)[0m  SELECT "authors".* FROM "authors"
+  [1m[36mPublication Load (0.3ms)[0m  [1mSELECT "publications".* FROM "publications" INNER JOIN "authors_publications" ON "publications"."id" = "authors_publications"."publication_id" WHERE "authors_publications"."author_id" = ?[0m  [["author_id", 1]]
+  Rendered authors/index.html.erb within layouts/application (49.3ms)
+Completed 200 OK in 399ms (Views: 376.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/authors" for ::1 at 2017-05-31 16:04:38 +0300
+Processing by AuthorsController#index as HTML
+  [1m[35mAuthor Load (0.8ms)[0m  SELECT "authors".* FROM "authors"
+  [1m[36mPublication Load (0.4ms)[0m  [1mSELECT "publications".* FROM "publications" INNER JOIN "authors_publications" ON "publications"."id" = "authors_publications"."publication_id" WHERE "authors_publications"."author_id" = ?[0m  [["author_id", 1]]
+  Rendered authors/index.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 139ms (Views: 135.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/publications" for ::1 at 2017-05-31 16:04:40 +0300
+Processing by PublicationsController#index as HTML
+  [1m[35mPublication Load (0.8ms)[0m  SELECT "publications".* FROM "publications"
+  Rendered publications/index.html.erb within layouts/application (21.8ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.8ms)
+
+ActionView::Template::Error (undefined method `each' for #<Publication:0x007f91044d1830>):
+    21:         <td><%= publication.abstract %></td>
+    22:         <td><%= publication.year %></td>
+    23:         <td>
+    24:           <% publication.each do |author| %>
+    25:               <%= author.name %>,
+    26:           <% end %>
+    27:         </td>
+  app/views/publications/index.html.erb:24:in `block in _app_views_publications_index_html_erb__2652309729158862764_70130409282120'
+  app/views/publications/index.html.erb:18:in `_app_views_publications_index_html_erb__2652309729158862764_70130409282120'
+
+
+  Rendered /Users/mikkotiainen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /Users/mikkotiainen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/mikkotiainen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/mikkotiainen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (64.7ms)
+  Rendered /Users/mikkotiainen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/mikkotiainen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/mikkotiainen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mikkotiainen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mikkotiainen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (68.5ms)
+  Rendered /Users/mikkotiainen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/mikkotiainen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/mikkotiainen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (144.4ms)
+
+
+Started GET "/publications" for ::1 at 2017-05-31 16:05:01 +0300
+Processing by PublicationsController#index as HTML
+  [1m[36mPublication Load (0.2ms)[0m  [1mSELECT "publications".* FROM "publications"[0m
+  [1m[35mAuthor Load (0.2ms)[0m  SELECT "authors".* FROM "authors" INNER JOIN "authors_publications" ON "authors"."id" = "authors_publications"."author_id" WHERE "authors_publications"."publication_id" = ?  [["publication_id", 1]]
+  [1m[36mAuthor Load (0.1ms)[0m  [1mSELECT "authors".* FROM "authors" INNER JOIN "authors_publications" ON "authors"."id" = "authors_publications"."author_id" WHERE "authors_publications"."publication_id" = ?[0m  [["publication_id", 2]]
+  [1m[35mAuthor Load (0.1ms)[0m  SELECT "authors".* FROM "authors" INNER JOIN "authors_publications" ON "authors"."id" = "authors_publications"."author_id" WHERE "authors_publications"."publication_id" = ?  [["publication_id", 3]]
+  [1m[36mAuthor Load (0.2ms)[0m  [1mSELECT "authors".* FROM "authors" INNER JOIN "authors_publications" ON "authors"."id" = "authors_publications"."author_id" WHERE "authors_publications"."publication_id" = ?[0m  [["publication_id", 4]]
+  [1m[35mAuthor Load (0.1ms)[0m  SELECT "authors".* FROM "authors" INNER JOIN "authors_publications" ON "authors"."id" = "authors_publications"."author_id" WHERE "authors_publications"."publication_id" = ?  [["publication_id", 5]]
+  [1m[36mAuthor Load (0.1ms)[0m  [1mSELECT "authors".* FROM "authors" INNER JOIN "authors_publications" ON "authors"."id" = "authors_publications"."author_id" WHERE "authors_publications"."publication_id" = ?[0m  [["publication_id", 6]]
+  Rendered publications/index.html.erb within layouts/application (21.2ms)
+Completed 200 OK in 63ms (Views: 61.0ms | ActiveRecord: 0.9ms)
+  [1m[36m (1.4ms)[0m  [1mCREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "authors_publications" ("publication_id" integer NOT NULL, "author_id" integer NOT NULL) 
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "layer_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "categories_publications" ("publication_id" integer NOT NULL, "category_id" integer NOT NULL) 
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "layers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "links" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "url" varchar, "publication_id" integer, "link_type" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "publications" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "abstract" varchar, "year" integer, "journal" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (1.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525193931')[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525121507')
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525121621')[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525125708')
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525134658')[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525134810')
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525134948')[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525145441')
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "authors_publications" ("publication_id" integer NOT NULL, "author_id" integer NOT NULL) 
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "layer_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "categories_publications" ("publication_id" integer NOT NULL, "category_id" integer NOT NULL) 
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "layers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "links" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "url" varchar, "publication_id" integer, "link_type" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "publications" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "abstract" varchar, "year" integer, "journal" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (1.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525193931')[0m
+  [1m[35m (1.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525121507')
+  [1m[36m (0.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525121621')[0m
+  [1m[35m (0.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525125708')
+  [1m[36m (1.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525134658')[0m
+  [1m[35m (0.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525134810')
+  [1m[36m (0.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525134948')[0m
+  [1m[35m (1.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525145441')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Signal"], ["created_at", "2017-05-31 13:06:38.502127"], ["updated_at", "2017-05-31 13:06:38.502127"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Metrics"], ["created_at", "2017-05-31 13:06:38.508412"], ["updated_at", "2017-05-31 13:06:38.508412"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Indicies"], ["created_at", "2017-05-31 13:06:38.510958"], ["updated_at", "2017-05-31 13:06:38.510958"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Logic"], ["created_at", "2017-05-31 13:06:38.513169"], ["updated_at", "2017-05-31 13:06:38.513169"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Application"], ["created_at", "2017-05-31 13:06:38.515208"], ["updated_at", "2017-05-31 13:06:38.515208"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Audio Biofeedback for Poker Players"], ["abstract", "Abstract text here"], ["year", 2001], ["journal", "Nature"], ["created_at", "2017-05-31 13:06:38.533581"], ["updated_at", "2017-05-31 13:06:38.533581"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Neurofeedback Meditation in Virtual Reality"], ["abstract", "Abstract text here"], ["year", 2005], ["journal", "Science"], ["created_at", "2017-05-31 13:06:38.536314"], ["updated_at", "2017-05-31 13:06:38.536314"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Relevance Annotation for Scientific Text"], ["abstract", "Abstract text here"], ["year", 2007], ["journal", "Nature Neuroscience"], ["created_at", "2017-05-31 13:06:38.539016"], ["updated_at", "2017-05-31 13:06:38.539016"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Affective Annotation for News Reading"], ["abstract", "Abstract text here"], ["year", 2016], ["journal", "Current Biology"], ["created_at", "2017-05-31 13:06:38.542099"], ["updated_at", "2017-05-31 13:06:38.542099"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Humor Detection"], ["abstract", "Abstract text here"], ["year", 2016], ["journal", "Science"], ["created_at", "2017-05-31 13:06:38.544557"], ["updated_at", "2017-05-31 13:06:38.544557"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Datamining Phys. Data for Game Design"], ["abstract", "Abstract text here"], ["year", 2013], ["journal", "Nature"], ["created_at", "2017-05-31 13:06:38.547491"], ["updated_at", "2017-05-31 13:06:38.547491"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["url", "www.nature.com"], ["publication_id", 1], ["link_type", "web"], ["created_at", "2017-05-31 13:06:38.575799"], ["updated_at", "2017-05-31 13:06:38.575799"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "www.science.com"], ["publication_id", 2], ["link_type", "web"], ["created_at", "2017-05-31 13:06:38.579645"], ["updated_at", "2017-05-31 13:06:38.579645"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["url", "www.github.com"], ["publication_id", 2], ["link_type", "github"], ["created_at", "2017-05-31 13:06:38.582383"], ["updated_at", "2017-05-31 13:06:38.582383"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "www.suomi24.fi"], ["publication_id", 3], ["link_type", "web"], ["created_at", "2017-05-31 13:06:38.585438"], ["updated_at", "2017-05-31 13:06:38.585438"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["url", "cs.helsinki.fi"], ["publication_id", 4], ["link_type", "web"], ["created_at", "2017-05-31 13:06:38.588604"], ["updated_at", "2017-05-31 13:06:38.588604"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "www.science.com"], ["publication_id", 5], ["link_type", "web"], ["created_at", "2017-05-31 13:06:38.591566"], ["updated_at", "2017-05-31 13:06:38.591566"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["url", "www.nature.com"], ["publication_id", 6], ["link_type", "web"], ["created_at", "2017-05-31 13:06:38.594792"], ["updated_at", "2017-05-31 13:06:38.594792"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mPublication Load (0.2ms)[0m  SELECT "publications".* FROM "publications" WHERE "publications"."id" IN (1, 2, 3)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "authors" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Pasi Kosunen"], ["created_at", "2017-05-31 13:06:38.628773"], ["updated_at", "2017-05-31 13:06:38.628773"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "authors_publications" ("publication_id", "author_id") VALUES (?, ?)[0m  [["publication_id", 1], ["author_id", 1]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "authors_publications" ("publication_id", "author_id") VALUES (?, ?)  [["publication_id", 2], ["author_id", 1]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "authors_publications" ("publication_id", "author_id") VALUES (?, ?)[0m  [["publication_id", 3], ["author_id", 1]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36mPublication Load (0.2ms)[0m  [1mSELECT "publications".* FROM "publications" WHERE "publications"."id" IN (1, 2, 5, 6)[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "authors" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Ilkka Kosunen"], ["created_at", "2017-05-31 13:06:38.637970"], ["updated_at", "2017-05-31 13:06:38.637970"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "authors_publications" ("publication_id", "author_id") VALUES (?, ?)  [["publication_id", 1], ["author_id", 2]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "authors_publications" ("publication_id", "author_id") VALUES (?, ?)[0m  [["publication_id", 2], ["author_id", 2]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "authors_publications" ("publication_id", "author_id") VALUES (?, ?)  [["publication_id", 5], ["author_id", 2]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "authors_publications" ("publication_id", "author_id") VALUES (?, ?)[0m  [["publication_id", 6], ["author_id", 2]]
+  [1m[35m (0.9ms)[0m  commit transaction
+
+
+Started GET "/publications" for ::1 at 2017-05-31 16:06:40 +0300
+Processing by PublicationsController#index as HTML
+  [1m[35mPublication Load (0.2ms)[0m  SELECT "publications".* FROM "publications"
+  [1m[36mAuthor Load (0.1ms)[0m  [1mSELECT "authors".* FROM "authors" INNER JOIN "authors_publications" ON "authors"."id" = "authors_publications"."author_id" WHERE "authors_publications"."publication_id" = ?[0m  [["publication_id", 1]]
+  [1m[35mAuthor Load (0.1ms)[0m  SELECT "authors".* FROM "authors" INNER JOIN "authors_publications" ON "authors"."id" = "authors_publications"."author_id" WHERE "authors_publications"."publication_id" = ?  [["publication_id", 2]]
+  [1m[36mAuthor Load (0.1ms)[0m  [1mSELECT "authors".* FROM "authors" INNER JOIN "authors_publications" ON "authors"."id" = "authors_publications"."author_id" WHERE "authors_publications"."publication_id" = ?[0m  [["publication_id", 3]]
+  [1m[35mAuthor Load (0.1ms)[0m  SELECT "authors".* FROM "authors" INNER JOIN "authors_publications" ON "authors"."id" = "authors_publications"."author_id" WHERE "authors_publications"."publication_id" = ?  [["publication_id", 4]]
+  [1m[36mAuthor Load (0.1ms)[0m  [1mSELECT "authors".* FROM "authors" INNER JOIN "authors_publications" ON "authors"."id" = "authors_publications"."author_id" WHERE "authors_publications"."publication_id" = ?[0m  [["publication_id", 5]]
+  [1m[35mAuthor Load (0.1ms)[0m  SELECT "authors".* FROM "authors" INNER JOIN "authors_publications" ON "authors"."id" = "authors_publications"."author_id" WHERE "authors_publications"."publication_id" = ?  [["publication_id", 6]]
+  Rendered publications/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 46ms (Views: 43.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/publications" for ::1 at 2017-05-31 16:07:12 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PublicationsController#index as HTML
+  [1m[35mPublication Load (0.2ms)[0m  SELECT "publications".* FROM "publications"
+  [1m[36mAuthor Load (0.3ms)[0m  [1mSELECT "authors".* FROM "authors" INNER JOIN "authors_publications" ON "authors"."id" = "authors_publications"."author_id" WHERE "authors_publications"."publication_id" = ?[0m  [["publication_id", 1]]
+  [1m[35mAuthor Load (0.1ms)[0m  SELECT "authors".* FROM "authors" INNER JOIN "authors_publications" ON "authors"."id" = "authors_publications"."author_id" WHERE "authors_publications"."publication_id" = ?  [["publication_id", 2]]
+  [1m[36mAuthor Load (0.1ms)[0m  [1mSELECT "authors".* FROM "authors" INNER JOIN "authors_publications" ON "authors"."id" = "authors_publications"."author_id" WHERE "authors_publications"."publication_id" = ?[0m  [["publication_id", 3]]
+  [1m[35mAuthor Load (0.1ms)[0m  SELECT "authors".* FROM "authors" INNER JOIN "authors_publications" ON "authors"."id" = "authors_publications"."author_id" WHERE "authors_publications"."publication_id" = ?  [["publication_id", 4]]
+  [1m[36mAuthor Load (0.2ms)[0m  [1mSELECT "authors".* FROM "authors" INNER JOIN "authors_publications" ON "authors"."id" = "authors_publications"."author_id" WHERE "authors_publications"."publication_id" = ?[0m  [["publication_id", 5]]
+  [1m[35mAuthor Load (0.1ms)[0m  SELECT "authors".* FROM "authors" INNER JOIN "authors_publications" ON "authors"."id" = "authors_publications"."author_id" WHERE "authors_publications"."publication_id" = ?  [["publication_id", 6]]
+  Rendered publications/index.html.erb within layouts/application (49.9ms)
+Completed 200 OK in 401ms (Views: 373.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/authors" for ::1 at 2017-05-31 16:07:35 +0300
+Processing by AuthorsController#index as HTML
+  [1m[36mAuthor Load (0.2ms)[0m  [1mSELECT "authors".* FROM "authors"[0m
+  [1m[35mPublication Load (0.2ms)[0m  SELECT "publications".* FROM "publications" INNER JOIN "authors_publications" ON "publications"."id" = "authors_publications"."publication_id" WHERE "authors_publications"."author_id" = ?  [["author_id", 1]]
+  [1m[36mPublication Load (0.1ms)[0m  [1mSELECT "publications".* FROM "publications" INNER JOIN "authors_publications" ON "publications"."id" = "authors_publications"."publication_id" WHERE "authors_publications"."author_id" = ?[0m  [["author_id", 2]]
+  Rendered authors/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 36ms (Views: 35.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/authors.json" for ::1 at 2017-05-31 16:07:48 +0300
+Processing by AuthorsController#index as JSON
+  [1m[35mAuthor Load (0.4ms)[0m  SELECT "authors".* FROM "authors"
+  Rendered authors/_author.json.jbuilder (0.9ms)
+  Rendered authors/_author.json.jbuilder (0.2ms)
+  Rendered authors/index.json.jbuilder (11.8ms)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/authors/1.json" for ::1 at 2017-05-31 16:08:16 +0300
+Processing by AuthorsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mAuthor Load (0.2ms)[0m  [1mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered authors/_author.json.jbuilder (0.6ms)
+  Rendered authors/show.json.jbuilder (2.2ms)
+Completed 200 OK in 14ms (Views: 7.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/layers" for ::1 at 2017-05-31 16:43:38 +0300
+Processing by LayersController#index as HTML
+  [1m[35mLayer Load (0.7ms)[0m  SELECT "layers".* FROM "layers"
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."layer_id" = ?[0m  [["layer_id", 1]]
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."layer_id" = ?  [["layer_id", 2]]
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."layer_id" = ?[0m  [["layer_id", 3]]
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."layer_id" = ?  [["layer_id", 4]]
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."layer_id" = ?[0m  [["layer_id", 5]]
+  Rendered layers/index.html.erb within layouts/application (29.7ms)
+Completed 200 OK in 98ms (Views: 84.1ms | ActiveRecord: 2.1ms)
+  [1m[36m (1.2ms)[0m  [1mCREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "authors_publications" ("publication_id" integer NOT NULL, "author_id" integer NOT NULL) 
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "layer_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "categories_publications" ("publication_id" integer NOT NULL, "category_id" integer NOT NULL) 
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "layers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "links" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "url" varchar, "publication_id" integer, "link_type" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "publications" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "abstract" varchar, "year" integer, "journal" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525193931')[0m
+  [1m[35m (0.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525121507')
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525121621')[0m
+  [1m[35m (0.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525125708')
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525134658')[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525134810')
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525134948')[0m
+  [1m[35m (1.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525145441')
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "authors_publications" ("publication_id" integer NOT NULL, "author_id" integer NOT NULL) 
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "layer_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "categories_publications" ("publication_id" integer NOT NULL, "category_id" integer NOT NULL) 
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "layers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "links" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "url" varchar, "publication_id" integer, "link_type" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "publications" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "abstract" varchar, "year" integer, "journal" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525193931')[0m
+  [1m[35m (1.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525121507')
+  [1m[36m (0.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525121621')[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525125708')
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525134658')[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525134810')
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170525134948')[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170525145441')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.6ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Application"], ["created_at", "2017-05-31 13:43:48.772278"], ["updated_at", "2017-05-31 13:43:48.772278"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Logic"], ["created_at", "2017-05-31 13:43:48.777441"], ["updated_at", "2017-05-31 13:43:48.777441"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Indicies"], ["created_at", "2017-05-31 13:43:48.779429"], ["updated_at", "2017-05-31 13:43:48.779429"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Metrics"], ["created_at", "2017-05-31 13:43:48.781344"], ["updated_at", "2017-05-31 13:43:48.781344"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "layers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Signal"], ["created_at", "2017-05-31 13:43:48.784039"], ["updated_at", "2017-05-31 13:43:48.784039"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Audio Biofeedback for Poker Players"], ["abstract", "Abstract text here"], ["year", 2001], ["journal", "Nature"], ["created_at", "2017-05-31 13:43:48.802065"], ["updated_at", "2017-05-31 13:43:48.802065"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Neurofeedback Meditation in Virtual Reality"], ["abstract", "Abstract text here"], ["year", 2005], ["journal", "Science"], ["created_at", "2017-05-31 13:43:48.805701"], ["updated_at", "2017-05-31 13:43:48.805701"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Relevance Annotation for Scientific Text"], ["abstract", "Abstract text here"], ["year", 2007], ["journal", "Nature Neuroscience"], ["created_at", "2017-05-31 13:43:48.808246"], ["updated_at", "2017-05-31 13:43:48.808246"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Affective Annotation for News Reading"], ["abstract", "Abstract text here"], ["year", 2016], ["journal", "Current Biology"], ["created_at", "2017-05-31 13:43:48.810570"], ["updated_at", "2017-05-31 13:43:48.810570"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Humor Detection"], ["abstract", "Abstract text here"], ["year", 2016], ["journal", "Science"], ["created_at", "2017-05-31 13:43:48.812723"], ["updated_at", "2017-05-31 13:43:48.812723"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "publications" ("name", "abstract", "year", "journal", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Datamining Phys. Data for Game Design"], ["abstract", "Abstract text here"], ["year", 2013], ["journal", "Nature"], ["created_at", "2017-05-31 13:43:48.814868"], ["updated_at", "2017-05-31 13:43:48.814868"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["url", "www.nature.com"], ["publication_id", 1], ["link_type", "web"], ["created_at", "2017-05-31 13:43:48.840435"], ["updated_at", "2017-05-31 13:43:48.840435"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "www.science.com"], ["publication_id", 2], ["link_type", "web"], ["created_at", "2017-05-31 13:43:48.844176"], ["updated_at", "2017-05-31 13:43:48.844176"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["url", "www.github.com"], ["publication_id", 2], ["link_type", "github"], ["created_at", "2017-05-31 13:43:48.846779"], ["updated_at", "2017-05-31 13:43:48.846779"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "www.suomi24.fi"], ["publication_id", 3], ["link_type", "web"], ["created_at", "2017-05-31 13:43:48.849617"], ["updated_at", "2017-05-31 13:43:48.849617"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["url", "cs.helsinki.fi"], ["publication_id", 4], ["link_type", "web"], ["created_at", "2017-05-31 13:43:48.853434"], ["updated_at", "2017-05-31 13:43:48.853434"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "www.science.com"], ["publication_id", 5], ["link_type", "web"], ["created_at", "2017-05-31 13:43:48.856568"], ["updated_at", "2017-05-31 13:43:48.856568"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "links" ("url", "publication_id", "link_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["url", "www.nature.com"], ["publication_id", 6], ["link_type", "web"], ["created_at", "2017-05-31 13:43:48.859246"], ["updated_at", "2017-05-31 13:43:48.859246"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mPublication Load (0.2ms)[0m  SELECT "publications".* FROM "publications" WHERE "publications"."id" IN (1, 2, 3)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "authors" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Pasi Kosunen"], ["created_at", "2017-05-31 13:43:48.891795"], ["updated_at", "2017-05-31 13:43:48.891795"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "authors_publications" ("publication_id", "author_id") VALUES (?, ?)[0m  [["publication_id", 1], ["author_id", 1]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "authors_publications" ("publication_id", "author_id") VALUES (?, ?)  [["publication_id", 2], ["author_id", 1]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "authors_publications" ("publication_id", "author_id") VALUES (?, ?)[0m  [["publication_id", 3], ["author_id", 1]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36mPublication Load (0.2ms)[0m  [1mSELECT "publications".* FROM "publications" WHERE "publications"."id" IN (1, 2, 5, 6)[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "authors" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Ilkka Kosunen"], ["created_at", "2017-05-31 13:43:48.900945"], ["updated_at", "2017-05-31 13:43:48.900945"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "authors_publications" ("publication_id", "author_id") VALUES (?, ?)  [["publication_id", 1], ["author_id", 2]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "authors_publications" ("publication_id", "author_id") VALUES (?, ?)[0m  [["publication_id", 2], ["author_id", 2]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "authors_publications" ("publication_id", "author_id") VALUES (?, ?)  [["publication_id", 5], ["author_id", 2]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "authors_publications" ("publication_id", "author_id") VALUES (?, ?)[0m  [["publication_id", 6], ["author_id", 2]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mPublication Load (0.2ms)[0m  [1mSELECT "publications".* FROM "publications" WHERE "publications"."id" IN (4, 3, 6)[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "authors" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Seppo Ilmarinen"], ["created_at", "2017-05-31 13:43:48.909273"], ["updated_at", "2017-05-31 13:43:48.909273"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "authors_publications" ("publication_id", "author_id") VALUES (?, ?)  [["publication_id", 3], ["author_id", 3]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "authors_publications" ("publication_id", "author_id") VALUES (?, ?)[0m  [["publication_id", 4], ["author_id", 3]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "authors_publications" ("publication_id", "author_id") VALUES (?, ?)  [["publication_id", 6], ["author_id", 3]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mPublication Load (0.2ms)[0m  SELECT "publications".* FROM "publications" WHERE "publications"."id" IN (2, 3)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "categories" ("name", "layer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "EEG"], ["layer_id", 5], ["created_at", "2017-05-31 13:43:48.929968"], ["updated_at", "2017-05-31 13:43:48.929968"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "categories_publications" ("publication_id", "category_id") VALUES (?, ?)[0m  [["publication_id", 2], ["category_id", 1]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "categories_publications" ("publication_id", "category_id") VALUES (?, ?)  [["publication_id", 3], ["category_id", 1]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mPublication Load (0.2ms)[0m  SELECT "publications".* FROM "publications" WHERE "publications"."id" IN (1, 3, 4, 5, 6)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "categories" ("name", "layer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "EDA"], ["layer_id", 5], ["created_at", "2017-05-31 13:43:48.937906"], ["updated_at", "2017-05-31 13:43:48.937906"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "categories_publications" ("publication_id", "category_id") VALUES (?, ?)[0m  [["publication_id", 1], ["category_id", 2]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "categories_publications" ("publication_id", "category_id") VALUES (?, ?)  [["publication_id", 3], ["category_id", 2]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "categories_publications" ("publication_id", "category_id") VALUES (?, ?)[0m  [["publication_id", 4], ["category_id", 2]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "categories_publications" ("publication_id", "category_id") VALUES (?, ?)  [["publication_id", 5], ["category_id", 2]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "categories_publications" ("publication_id", "category_id") VALUES (?, ?)[0m  [["publication_id", 6], ["category_id", 2]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mPublication Load (0.2ms)[0m  [1mSELECT "publications".* FROM "publications" WHERE "publications"."id" = 3[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "categories" ("name", "layer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "fEMG"], ["layer_id", 5], ["created_at", "2017-05-31 13:43:48.946258"], ["updated_at", "2017-05-31 13:43:48.946258"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "categories_publications" ("publication_id", "category_id") VALUES (?, ?)  [["publication_id", 3], ["category_id", 3]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mPublication Load (0.1ms)[0m  SELECT "publications".* FROM "publications" WHERE "publications"."id" = 6
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "categories" ("name", "layer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "ECG"], ["layer_id", 5], ["created_at", "2017-05-31 13:43:48.951202"], ["updated_at", "2017-05-31 13:43:48.951202"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "categories_publications" ("publication_id", "category_id") VALUES (?, ?)[0m  [["publication_id", 6], ["category_id", 4]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mPublication Load (0.1ms)[0m  [1mSELECT "publications".* FROM "publications" WHERE "publications"."id" = 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "categories" ("name", "layer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "SCL"], ["layer_id", 4], ["created_at", "2017-05-31 13:43:48.955936"], ["updated_at", "2017-05-31 13:43:48.955936"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "categories_publications" ("publication_id", "category_id") VALUES (?, ?)  [["publication_id", 1], ["category_id", 5]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mPublication Load (0.1ms)[0m  SELECT "publications".* FROM "publications" WHERE "publications"."id" = 2
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "categories" ("name", "layer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Alpha frequency"], ["layer_id", 4], ["created_at", "2017-05-31 13:43:48.960883"], ["updated_at", "2017-05-31 13:43:48.960883"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "categories_publications" ("publication_id", "category_id") VALUES (?, ?)[0m  [["publication_id", 2], ["category_id", 6]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mPublication Load (0.1ms)[0m  [1mSELECT "publications".* FROM "publications" WHERE "publications"."id" = 2[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "categories" ("name", "layer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Theta frequency"], ["layer_id", 4], ["created_at", "2017-05-31 13:43:48.965787"], ["updated_at", "2017-05-31 13:43:48.965787"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "categories_publications" ("publication_id", "category_id") VALUES (?, ?)  [["publication_id", 2], ["category_id", 7]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mPublication Load (0.2ms)[0m  SELECT "publications".* FROM "publications" WHERE "publications"."id" IN (3, 6)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "categories" ("name", "layer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "SCP"], ["layer_id", 4], ["created_at", "2017-05-31 13:43:48.971770"], ["updated_at", "2017-05-31 13:43:48.971770"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "categories_publications" ("publication_id", "category_id") VALUES (?, ?)[0m  [["publication_id", 3], ["category_id", 8]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "categories_publications" ("publication_id", "category_id") VALUES (?, ?)  [["publication_id", 6], ["category_id", 8]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mPublication Load (0.2ms)[0m  SELECT "publications".* FROM "publications" WHERE "publications"."id" IN (3, 6)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "categories" ("name", "layer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "CS"], ["layer_id", 4], ["created_at", "2017-05-31 13:43:48.978209"], ["updated_at", "2017-05-31 13:43:48.978209"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "categories_publications" ("publication_id", "category_id") VALUES (?, ?)[0m  [["publication_id", 3], ["category_id", 9]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "categories_publications" ("publication_id", "category_id") VALUES (?, ?)  [["publication_id", 6], ["category_id", 9]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mPublication Load (0.1ms)[0m  SELECT "publications".* FROM "publications" WHERE "publications"."id" = 4
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "categories" ("name", "layer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Tonic"], ["layer_id", 4], ["created_at", "2017-05-31 13:43:48.983919"], ["updated_at", "2017-05-31 13:43:48.983919"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "categories_publications" ("publication_id", "category_id") VALUES (?, ?)[0m  [["publication_id", 4], ["category_id", 10]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36mPublication Load (0.2ms)[0m  [1mSELECT "publications".* FROM "publications" WHERE "publications"."id" = 4[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "categories" ("name", "layer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Phasic"], ["layer_id", 4], ["created_at", "2017-05-31 13:43:48.988826"], ["updated_at", "2017-05-31 13:43:48.988826"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "categories_publications" ("publication_id", "category_id") VALUES (?, ?)  [["publication_id", 4], ["category_id", 11]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mPublication Load (0.1ms)[0m  SELECT "publications".* FROM "publications" WHERE "publications"."id" = 4
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "categories" ("name", "layer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "nSCR"], ["layer_id", 4], ["created_at", "2017-05-31 13:43:48.994465"], ["updated_at", "2017-05-31 13:43:48.994465"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "categories_publications" ("publication_id", "category_id") VALUES (?, ?)[0m  [["publication_id", 4], ["category_id", 12]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mPublication Load (0.1ms)[0m  [1mSELECT "publications".* FROM "publications" WHERE "publications"."id" = 5[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "categories" ("name", "layer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Custom"], ["layer_id", 4], ["created_at", "2017-05-31 13:43:48.999113"], ["updated_at", "2017-05-31 13:43:48.999113"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "categories_publications" ("publication_id", "category_id") VALUES (?, ?)  [["publication_id", 5], ["category_id", 13]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mPublication Load (0.1ms)[0m  SELECT "publications".* FROM "publications" WHERE "publications"."id" = 6
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "categories" ("name", "layer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "ZM"], ["layer_id", 4], ["created_at", "2017-05-31 13:43:49.004596"], ["updated_at", "2017-05-31 13:43:49.004596"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "categories_publications" ("publication_id", "category_id") VALUES (?, ?)[0m  [["publication_id", 6], ["category_id", 14]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mPublication Load (0.1ms)[0m  [1mSELECT "publications".* FROM "publications" WHERE "publications"."id" = 6[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "categories" ("name", "layer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "OO"], ["layer_id", 4], ["created_at", "2017-05-31 13:43:49.009430"], ["updated_at", "2017-05-31 13:43:49.009430"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "categories_publications" ("publication_id", "category_id") VALUES (?, ?)  [["publication_id", 6], ["category_id", 15]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mPublication Load (0.2ms)[0m  SELECT "publications".* FROM "publications" WHERE "publications"."id" = 6
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "categories" ("name", "layer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "IBI"], ["layer_id", 4], ["created_at", "2017-05-31 13:43:49.014531"], ["updated_at", "2017-05-31 13:43:49.014531"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "categories_publications" ("publication_id", "category_id") VALUES (?, ?)[0m  [["publication_id", 6], ["category_id", 16]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36mPublication Load (0.2ms)[0m  [1mSELECT "publications".* FROM "publications" WHERE "publications"."id" = 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "categories" ("name", "layer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Arousal"], ["layer_id", 3], ["created_at", "2017-05-31 13:43:49.020719"], ["updated_at", "2017-05-31 13:43:49.020719"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "categories_publications" ("publication_id", "category_id") VALUES (?, ?)  [["publication_id", 1], ["category_id", 17]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mPublication Load (0.2ms)[0m  SELECT "publications".* FROM "publications" WHERE "publications"."id" = 2
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "categories" ("name", "layer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Relaxation"], ["layer_id", 3], ["created_at", "2017-05-31 13:43:49.026433"], ["updated_at", "2017-05-31 13:43:49.026433"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "categories_publications" ("publication_id", "category_id") VALUES (?, ?)[0m  [["publication_id", 2], ["category_id", 18]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mPublication Load (0.1ms)[0m  [1mSELECT "publications".* FROM "publications" WHERE "publications"."id" = 2[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "categories" ("name", "layer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Concentration"], ["layer_id", 3], ["created_at", "2017-05-31 13:43:49.031203"], ["updated_at", "2017-05-31 13:43:49.031203"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "categories_publications" ("publication_id", "category_id") VALUES (?, ?)  [["publication_id", 2], ["category_id", 19]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mPublication Load (0.2ms)[0m  SELECT "publications".* FROM "publications" WHERE "publications"."id" IN (3, 4, 5)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "categories" ("name", "layer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Supervised Machine Learning Features"], ["layer_id", 3], ["created_at", "2017-05-31 13:43:49.037318"], ["updated_at", "2017-05-31 13:43:49.037318"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "categories_publications" ("publication_id", "category_id") VALUES (?, ?)[0m  [["publication_id", 3], ["category_id", 20]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "categories_publications" ("publication_id", "category_id") VALUES (?, ?)  [["publication_id", 4], ["category_id", 20]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "categories_publications" ("publication_id", "category_id") VALUES (?, ?)[0m  [["publication_id", 5], ["category_id", 20]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36mPublication Load (0.1ms)[0m  [1mSELECT "publications".* FROM "publications" WHERE "publications"."id" = 6[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "categories" ("name", "layer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Unsupervised Machine Learning Features"], ["layer_id", 3], ["created_at", "2017-05-31 13:43:49.044632"], ["updated_at", "2017-05-31 13:43:49.044632"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "categories_publications" ("publication_id", "category_id") VALUES (?, ?)  [["publication_id", 6], ["category_id", 21]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mPublication Load (0.1ms)[0m  SELECT "publications".* FROM "publications" WHERE "publications"."id" = 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "categories" ("name", "layer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Arousal => Sound Mapping"], ["layer_id", 2], ["created_at", "2017-05-31 13:43:49.049410"], ["updated_at", "2017-05-31 13:43:49.049410"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "categories_publications" ("publication_id", "category_id") VALUES (?, ?)[0m  [["publication_id", 1], ["category_id", 22]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mPublication Load (0.2ms)[0m  [1mSELECT "publications".* FROM "publications" WHERE "publications"."id" = 2[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "categories" ("name", "layer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Relaxation & Concentration => Movement in VR"], ["layer_id", 2], ["created_at", "2017-05-31 13:43:49.054468"], ["updated_at", "2017-05-31 13:43:49.054468"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "categories_publications" ("publication_id", "category_id") VALUES (?, ?)  [["publication_id", 2], ["category_id", 23]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mPublication Load (0.1ms)[0m  SELECT "publications".* FROM "publications" WHERE "publications"."id" = 3
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "categories" ("name", "layer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "ML Features => Relevance"], ["layer_id", 2], ["created_at", "2017-05-31 13:43:49.059638"], ["updated_at", "2017-05-31 13:43:49.059638"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "categories_publications" ("publication_id", "category_id") VALUES (?, ?)[0m  [["publication_id", 3], ["category_id", 24]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mPublication Load (0.2ms)[0m  [1mSELECT "publications".* FROM "publications" WHERE "publications"."id" IN (4, 5)[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "categories" ("name", "layer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "ML Features => Affective States (Happy, Sad, Angry, Neutral)"], ["layer_id", 2], ["created_at", "2017-05-31 13:43:49.064920"], ["updated_at", "2017-05-31 13:43:49.064920"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "categories_publications" ("publication_id", "category_id") VALUES (?, ?)  [["publication_id", 4], ["category_id", 25]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "categories_publications" ("publication_id", "category_id") VALUES (?, ?)[0m  [["publication_id", 5], ["category_id", 25]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mPublication Load (0.1ms)[0m  [1mSELECT "publications".* FROM "publications" WHERE "publications"."id" = 6[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "categories" ("name", "layer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Cluster frequent patterns of physiological data => Find design patterns"], ["layer_id", 2], ["created_at", "2017-05-31 13:43:49.070732"], ["updated_at", "2017-05-31 13:43:49.070732"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "categories_publications" ("publication_id", "category_id") VALUES (?, ?)  [["publication_id", 6], ["category_id", 26]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mPublication Load (0.1ms)[0m  SELECT "publications".* FROM "publications" WHERE "publications"."id" = 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "categories" ("name", "layer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Sonify Arousal"], ["layer_id", 1], ["created_at", "2017-05-31 13:43:49.075716"], ["updated_at", "2017-05-31 13:43:49.075716"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "categories_publications" ("publication_id", "category_id") VALUES (?, ?)[0m  [["publication_id", 1], ["category_id", 27]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36mPublication Load (0.1ms)[0m  [1mSELECT "publications".* FROM "publications" WHERE "publications"."id" = 2[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "categories" ("name", "layer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Float in VR"], ["layer_id", 1], ["created_at", "2017-05-31 13:43:49.080924"], ["updated_at", "2017-05-31 13:43:49.080924"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "categories_publications" ("publication_id", "category_id") VALUES (?, ?)  [["publication_id", 2], ["category_id", 28]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mPublication Load (0.2ms)[0m  SELECT "publications".* FROM "publications" WHERE "publications"."id" IN (3, 4)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "categories" ("name", "layer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Label Text"], ["layer_id", 1], ["created_at", "2017-05-31 13:43:49.091773"], ["updated_at", "2017-05-31 13:43:49.091773"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "categories_publications" ("publication_id", "category_id") VALUES (?, ?)[0m  [["publication_id", 3], ["category_id", 29]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "categories_publications" ("publication_id", "category_id") VALUES (?, ?)  [["publication_id", 4], ["category_id", 29]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mPublication Load (0.1ms)[0m  SELECT "publications".* FROM "publications" WHERE "publications"."id" = 5
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "categories" ("name", "layer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Annotate Cont. Adapt Interface"], ["layer_id", 1], ["created_at", "2017-05-31 13:43:49.097733"], ["updated_at", "2017-05-31 13:43:49.097733"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "categories_publications" ("publication_id", "category_id") VALUES (?, ?)[0m  [["publication_id", 5], ["category_id", 30]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mPublication Load (0.1ms)[0m  [1mSELECT "publications".* FROM "publications" WHERE "publications"."id" = 6[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "categories" ("name", "layer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Extract Design Patterns"], ["layer_id", 1], ["created_at", "2017-05-31 13:43:49.102820"], ["updated_at", "2017-05-31 13:43:49.102820"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "categories_publications" ("publication_id", "category_id") VALUES (?, ?)  [["publication_id", 6], ["category_id", 31]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/layers" for ::1 at 2017-05-31 16:44:11 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LayersController#index as HTML
+  [1m[35mLayer Load (0.2ms)[0m  SELECT "layers".* FROM "layers"
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."layer_id" = ?[0m  [["layer_id", 1]]
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."layer_id" = ?  [["layer_id", 2]]
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."layer_id" = ?[0m  [["layer_id", 3]]
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."layer_id" = ?  [["layer_id", 4]]
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."layer_id" = ?[0m  [["layer_id", 5]]
+  Rendered layers/index.html.erb within layouts/application (44.1ms)
+Completed 200 OK in 400ms (Views: 376.9ms | ActiveRecord: 1.7ms)

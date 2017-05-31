@@ -20,6 +20,11 @@
         <td><%= publication.name %></td>
         <td><%= publication.abstract %></td>
         <td><%= publication.year %></td>
+        <td>
+          <% publication.authors.each do |author| %>
+              <%= author.name %>,
+          <% end %>
+        </td>
         <td><%= publication.journal %></td>
         <td><%= link_to 'Show', publication %></td>
         <td><%= link_to 'Edit', edit_publication_path(publication) %></td>
