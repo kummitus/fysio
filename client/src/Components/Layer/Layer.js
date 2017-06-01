@@ -1,9 +1,19 @@
 
 import React, { Component } from 'react';
+import { ListGroupItem } from 'reactstrap';
 
 class Layer extends Component{
+    constructor(props){
+        super();
+        this.props = props;
+
+    }
     render(){
-        return null
+        return (
+            <ListGroupItem id="{this.props.id}">
+                {this.props.layer.name}
+            </ListGroupItem>
+        );
     }
 }
 
