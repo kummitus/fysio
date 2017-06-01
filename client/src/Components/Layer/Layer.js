@@ -10,7 +10,7 @@ class Layer extends Component{
     }
     render(){
         return (
-            <ListGroupItem id="{this.props.id}">
+            <ListGroupItem id={this.props.layer.id}>
                 {this.props.layer.name}
             </ListGroupItem>
         );
