@@ -1,25 +1,24 @@
 
 import React, { Component } from 'react';
-import Layer from "../../Components/Layer/Layer";
-import { ListGroup, DropdownItem } from 'reactstrap';
+import Category from "../Category/Category";
 
+import { DropdownItem, ListGroup } from 'reactstrap';
 
-class LayerList extends Component {
+class CategoryList extends Component{
     constructor() {
         super();
         this.state = {
-            layers: [],
-            layerCategories: {}
+            categories: []
         }
     }
 
     componentWillMount() {
-        fetch('http://localhost:3001/layers.json')
+        fetch('http://localhost:3001/categories.json')
             .then(response => response.json())
             .then(results => {
                 console.log(results)
                 this.setState({
-                    layers: results
+                    categories: results
                 })
             })
     }
@@ -28,11 +27,11 @@ class LayerList extends Component {
         return (
             <div>
                 <ListGroup>
-                    { this.state.layers.map(l => <Layer key={l.id} layer={l}/>) }
+                    { this.state.categories.map(l => <DropdownItem><Category key={l.id} category={l}/></DropdownItem>) }
                 </ListGroup>
             </div>
-        );
+        )
     }
 }
 
-export default LayerList;
+export default CategoryList;
