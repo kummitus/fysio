@@ -5,32 +5,31 @@ import Category from "../Category/Category";
 import { DropdownItem, ListGroup } from 'reactstrap';
 
 class CategoryList extends Component{
-    constructor() {
+    constructor(props) {
         super();
         this.state = {
             categories: []
         }
     }
 
-    componentWillMount() {
-        fetch('http://localhost:3001/categories.json')
-            .then(response => response.json())
-            .then(results => {
-                console.log(results)
-                this.setState({
-                    categories: results
-                })
-            })
+    componentWillReceiveProps(nextProps){
+        this.setState({
+            categories: nextProps.categories
+        })
     }
 
     render() {
-        return (
-            <div>
-                <ListGroup>
-                    { this.state.categories.map(l => <DropdownItem><Category key={l.id} category={l}/></DropdownItem>) }
-                </ListGroup>
-            </div>
-        )
+        if(this.state.categories == null){
+            return null;
+        }else{
+            return (
+                <div>
+                    <ListGroup>
+                        { this.state.categories.map(l => <DropdownItem key={l.id}><Category key={l.id} category={l}/></DropdownItem>) }
+                    </ListGroup>
+                </div>
+            )
+        }
     }
 }
 

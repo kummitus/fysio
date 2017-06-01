@@ -7,14 +7,16 @@ class IndexView extends Component{
     render(){
         return (
             <table>
-                <tr>
-                    <td>
-                        <LayerList />
-                    </td>
-                    <td>
-                        <PublicationTable />
-                    </td>
-                </tr>
+                <tbody>
+                    <tr>
+                        <td>
+                            <LayerList />
+                        </td>
+                        <td>
+                            <PublicationTable />
+                        </td>
+                    </tr>
+                </tbody>
             </table>
         );
     }

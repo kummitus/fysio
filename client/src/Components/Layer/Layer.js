@@ -3,8 +3,7 @@ import React, { Component } from 'react';
 import { ListGroupItem,
          ButtonDropdown,
          DropdownToggle,
-         DropdownMenu,
-         DropdownItem
+         DropdownMenu
 } from 'reactstrap';
 import CategoryList from "../CategoryList/CategoryList";
 
@@ -13,8 +12,11 @@ class Layer extends Component {
     constructor(props) {
         super(props);
         this.toggle = this.toggle.bind(this);
+        console.log(props.categories);
         this.state = {
-            dropdownOpen: false
+            dropdownOpen: false,
+            categories: props.categories,
+            id: props.id
         };
     }
 
@@ -22,6 +24,13 @@ class Layer extends Component {
         this.setState({
             dropdownOpen: !this.state.dropdownOpen
         });
+    }
+
+    componentWillReceiveProps(nextProps){
+        this.setState({
+            categories: nextProps.categories,
+            id: nextProps.id
+        })
     }
 
     render(){
@@ -32,7 +41,7 @@ class Layer extends Component {
                     {this.props.layer.name}
                     </DropdownToggle>
                     <DropdownMenu>
-                        <CategoryList/>
+                        <CategoryList key={this.state.id} categories={this.state.categories}/>
                     </DropdownMenu>
                 </ButtonDropdown>
             </ListGroupItem>
